@@ -45,8 +45,8 @@ const faqItems = [
 
 const trustSignals = [
   'Business Associate Agreement (BAA) available',
-  'Review criteria mapped to CMS and major commercial payer policies',
-  'Findings include provider-ready examples for internal education',
+  'Review criteria explicitly mapped to CMS and major commercial payer policies',
+  'Findings cite chart-level evidence and include provider-ready examples',
 ]
 
 const fitChecklist = [
@@ -63,28 +63,28 @@ export default function App() {
         <div className="container hero-layout">
           <div className="hero-copy">
             <p className="eyebrow">DME Clinical Documentation Audit</p>
-            <h1>Audit readiness for DME claims, built for healthcare operations teams.</h1>
+            <h1>Independent DME documentation audits for teams that need defensible claims.</h1>
             <p className="lede">
-              Strengthen documentation quality, reduce preventable denials, and improve confidence before claims are submitted.
+              We review completed encounters against payer-required documentation elements and deliver a clear list of chart-level gaps before submission.
             </p>
 
             <div className="hero-actions">
               <a className="btn btn-primary" href="#contact-sales">Request a sample audit</a>
-              <a className="btn btn-secondary" href="#sample-audit">See example report</a>
+              <a className="btn btn-secondary" href="#sample-audit">Review sample findings</a>
             </div>
 
             <ul className="hero-stats" aria-label="Service highlights">
               <li>
-                <strong>Typically 48 hrs</strong>
+                <strong>Typically 3-5 business days</strong>
                 <span>Initial findings for standard sample sizes</span>
               </li>
               <li>
                 <strong>HIPAA-aware</strong>
-                <span>De-identification workflow</span>
+                <span>De-identified intake by default</span>
               </li>
               <li>
-                <strong>B2B focused</strong>
-                <span>Built for clinic leadership</span>
+                <strong>Evidence-based output</strong>
+                <span>Each finding ties to payer criteria and chart text</span>
               </li>
             </ul>
 
@@ -114,7 +114,7 @@ export default function App() {
         <section className="section process">
           <div className="container">
             <p className="eyebrow">Audit process</p>
-            <h2>A clear 3-step pathway from chart sample to corrective action.</h2>
+            <h2>A practical 3-step workflow from sample selection to corrective action.</h2>
 
             <div className="steps-grid" role="list" aria-label="Three step DME audit process">
               {auditSteps.map((step, index) => (
@@ -144,9 +144,9 @@ export default function App() {
           <div className="container report-layout">
             <div>
               <p className="eyebrow">Sample deliverable</p>
-              <h2>Audit report mockup designed for leadership decisions.</h2>
+              <h2>Sample report format used for leadership and compliance review.</h2>
               <p className="lede">
-                Every report combines denial-risk scoring, chart-level findings, and recommended policy updates so your team can prioritize what to fix first.
+                Reports include chart-level findings, citation-backed rationale, and prioritized remediation guidance so teams can act without guesswork.
               </p>
 
               <ul className="focus-list">
@@ -174,10 +174,10 @@ export default function App() {
             <div>
               <h2>Credibility-first, confidentiality-always.</h2>
               <p>
-                We only review de-identified records, maintain strict access controls, and provide audit documentation aligned to payer expectations and internal quality programs.
+                We review de-identified records, maintain role-based access controls, and document findings in language your compliance and operations leads can validate.
               </p>
             </div>
-            <a className="inline-link" href="#sample-audit">Download sample checklist</a>
+            <a className="inline-link" href="#contact-sales">Request scope and timeline details</a>
           </div>
         </section>
 
@@ -201,9 +201,9 @@ export default function App() {
           <div className="container contact-layout">
             <div>
               <p className="eyebrow">Next step</p>
-              <h2 id="contact-heading">Book a scoped documentation review.</h2>
+              <h2 id="contact-heading">Request a scoped DME audit plan.</h2>
               <p className="lede">
-                Share your organization details and we&apos;ll align on sample size, turnaround, and communication cadence.
+                Share your organization details and we&apos;ll send a defined scope, required inputs, expected turnaround, and pricing assumptions.
               </p>
               <p className="contact-note">Please do not include patient identifiers or clinical chart details in this form.</p>
             </div>
