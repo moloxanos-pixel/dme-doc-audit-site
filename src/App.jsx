@@ -43,6 +43,18 @@ const faqItems = [
   },
 ]
 
+const trustSignals = [
+  'Business Associate Agreement (BAA) available',
+  'Review criteria mapped to CMS and major commercial payer policies',
+  'Findings include provider-ready examples for internal education',
+]
+
+const fitChecklist = [
+  'You manage DME documentation quality across multiple clinicians.',
+  'You need denial-risk visibility before claims submission.',
+  'You want a clear remediation plan your team can execute this month.',
+]
+
 export default function App() {
   return (
     <div className="site-shell">
@@ -77,6 +89,12 @@ export default function App() {
             </ul>
 
             <p className="hero-disclaimer">Turnaround timing varies by chart count and documentation complexity.</p>
+
+            <div className="trust-proof" aria-label="Trust and compliance signals">
+              {trustSignals.map((signal) => (
+                <p key={signal}>{signal}</p>
+              ))}
+            </div>
           </div>
 
           <figure className="hero-media">
@@ -107,6 +125,18 @@ export default function App() {
                 </article>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="section fit-check" aria-labelledby="fit-check-heading">
+          <div className="container">
+            <p className="eyebrow">Quick fit check</p>
+            <h2 id="fit-check-heading">Best fit for teams that need fast, operational clarity.</h2>
+            <ul className="fit-list">
+              {fitChecklist.map((point) => (
+                <li key={point}>{point}</li>
+              ))}
+            </ul>
           </div>
         </section>
 
