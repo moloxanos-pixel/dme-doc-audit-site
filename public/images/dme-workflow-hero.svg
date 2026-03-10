@@ -1,0 +1,36 @@
+<svg width="720" height="540" viewBox="0 0 720 540" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DME documentation workflow">
+  <rect width="720" height="540" rx="24" fill="#F7FAFF"/>
+  <rect x="38" y="42" width="644" height="84" rx="14" fill="#0F2A56"/>
+  <text x="68" y="90" fill="#F2F7FF" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="700">Documentation Audit Workflow</text>
+
+  <rect x="42" y="156" width="200" height="320" rx="14" fill="#FFFFFF" stroke="#D7E2F0"/>
+  <text x="58" y="190" fill="#1D2E4A" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700">1. Intake Queue</text>
+  <rect x="58" y="210" width="168" height="52" rx="8" fill="#EEF3FC"/>
+  <rect x="58" y="274" width="168" height="52" rx="8" fill="#EEF3FC"/>
+  <rect x="58" y="338" width="168" height="52" rx="8" fill="#EEF3FC"/>
+  <text x="72" y="242" fill="#445A7D" font-family="Inter,Arial,sans-serif" font-size="13">De-identified chart set</text>
+  <text x="72" y="306" fill="#445A7D" font-family="Inter,Arial,sans-serif" font-size="13">DME order attachments</text>
+  <text x="72" y="370" fill="#445A7D" font-family="Inter,Arial,sans-serif" font-size="13">Payer requirement notes</text>
+
+  <rect x="260" y="156" width="200" height="320" rx="14" fill="#FFFFFF" stroke="#D7E2F0"/>
+  <text x="276" y="190" fill="#1D2E4A" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700">2. Review Bench</text>
+  <circle cx="310" cy="236" r="20" fill="#E8F0FF"/>
+  <circle cx="310" cy="292" r="20" fill="#E8F0FF"/>
+  <circle cx="310" cy="348" r="20" fill="#E8F0FF"/>
+  <text x="342" y="242" fill="#445A7D" font-family="Inter,Arial,sans-serif" font-size="13">Medical necessity language</text>
+  <text x="342" y="298" fill="#445A7D" font-family="Inter,Arial,sans-serif" font-size="13">Functional limitation detail</text>
+  <text x="342" y="354" fill="#445A7D" font-family="Inter,Arial,sans-serif" font-size="13">Coding & modifier support</text>
+
+  <rect x="478" y="156" width="200" height="320" rx="14" fill="#FFFFFF" stroke="#D7E2F0"/>
+  <text x="494" y="190" fill="#1D2E4A" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700">3. Remediation</text>
+  <rect x="494" y="216" width="168" height="184" rx="10" fill="#EEF3FC"/>
+  <text x="510" y="248" fill="#0F2A56" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600">Priority Findings</text>
+  <text x="510" y="276" fill="#445A7D" font-family="Inter,Arial,sans-serif" font-size="12">• Missing face-to-face elements</text>
+  <text x="510" y="300" fill="#445A7D" font-family="Inter,Arial,sans-serif" font-size="12">• Incomplete order rationale</text>
+  <text x="510" y="324" fill="#445A7D" font-family="Inter,Arial,sans-serif" font-size="12">• Weak ADL impact narrative</text>
+  <rect x="510" y="348" width="132" height="32" rx="8" fill="#0F2A56"/>
+  <text x="529" y="369" fill="#FFFFFF" font-family="Inter,Arial,sans-serif" font-size="12">Action Plan Ready</text>
+
+  <path d="M242 304H260" stroke="#90A6C9" stroke-width="3" stroke-linecap="round"/>
+  <path d="M460 304H478" stroke="#90A6C9" stroke-width="3" stroke-linecap="round"/>
+</svg>

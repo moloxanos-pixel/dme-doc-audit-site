@@ -1,0 +1,29 @@
+<svg width="720" height="520" viewBox="0 0 720 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sample DME audit report mockup">
+  <rect width="720" height="520" rx="24" fill="#F5F8FE"/>
+  <rect x="58" y="38" width="604" height="444" rx="16" fill="#FFFFFF" stroke="#D5E0EE"/>
+
+  <rect x="88" y="68" width="544" height="64" rx="10" fill="#0F2A56"/>
+  <text x="116" y="106" fill="#F4F8FF" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700">Q2 DME Documentation Audit Summary</text>
+
+  <text x="96" y="170" fill="#2A3E63" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700">Overall Compliance Score</text>
+  <rect x="96" y="184" width="244" height="20" rx="10" fill="#E7EEFA"/>
+  <rect x="96" y="184" width="188" height="20" rx="10" fill="#2F4E82"/>
+  <text x="292" y="199" fill="#1B2E4C" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700">77%</text>
+
+  <text x="384" y="170" fill="#2A3E63" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700">Denial Risk by Category</text>
+  <rect x="384" y="182" width="236" height="74" rx="10" fill="#F2F6FE"/>
+  <rect x="402" y="204" width="80" height="10" rx="5" fill="#8FA4C5"/>
+  <rect x="402" y="226" width="146" height="10" rx="5" fill="#5877AB"/>
+  <rect x="402" y="248" width="182" height="10" rx="5" fill="#2D4B7E"/>
+
+  <text x="96" y="288" fill="#2A3E63" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700">Top Findings</text>
+  <rect x="96" y="302" width="524" height="34" rx="8" fill="#F5F8FF"/>
+  <rect x="96" y="344" width="524" height="34" rx="8" fill="#F5F8FF"/>
+  <rect x="96" y="386" width="524" height="34" rx="8" fill="#F5F8FF"/>
+  <text x="112" y="324" fill="#435A7F" font-family="Inter,Arial,sans-serif" font-size="12">Missing detailed ADL limitations in 31% of charts reviewed.</text>
+  <text x="112" y="366" fill="#435A7F" font-family="Inter,Arial,sans-serif" font-size="12">Face-to-face timing window not clearly documented in 18% of orders.</text>
+  <text x="112" y="408" fill="#435A7F" font-family="Inter,Arial,sans-serif" font-size="12">Insufficient physician signature context for prior-auth packet in 12%.</text>
+
+  <rect x="468" y="436" width="152" height="28" rx="8" fill="#0F2A56"/>
+  <text x="488" y="454" fill="#FFFFFF" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="600">Remediation Roadmap</text>
+</svg>

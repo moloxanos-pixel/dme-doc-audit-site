@@ -1,129 +1,135 @@
+import './App.css'
+
+const auditSteps = [
+  {
+    title: 'Submit De-Identified Charts',
+    detail:
+      'Upload a focused sample of completed encounters and corresponding DME orders using our secure intake workflow.',
+  },
+  {
+    title: 'Clinical + Coding Review',
+    detail:
+      'Our auditors validate medical necessity language, functional limitation documentation, and payer-specific requirements.',
+  },
+  {
+    title: 'Actionable Remediation Plan',
+    detail:
+      'Receive prioritized fixes, denial-risk flags, and a provider coaching summary your team can apply immediately.',
+  },
+]
+
+const focusAreas = [
+  'Face-to-face encounter completeness',
+  'Order detail and modifier accuracy',
+  'Medical necessity narrative strength',
+  'Template consistency across clinicians',
+]
+
 export default function App() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="site-shell">
+      <header className="hero section">
+        <div className="container hero-layout">
+          <div className="hero-copy">
+            <p className="eyebrow">DME Clinical Documentation Audit</p>
+            <h1>Audit readiness for DME claims, built for healthcare operations teams.</h1>
+            <p className="lede">
+              Strengthen documentation quality, reduce preventable denials, and improve confidence before claims are submitted.
+            </p>
 
-      {/* HERO */}
-      <section className="bg-blue-900 text-white py-20">
-        <div className="max-w-5xl mx-auto px-6">
-          <h1 className="text-4xl font-bold mb-6">
-            Clinical Documentation Audit for DME Providers
-          </h1>
-
-          <p className="text-lg mb-8">
-            Improve documentation quality, reduce claim denials,
-            and ensure DME medical necessity is clearly supported.
-          </p>
-
-          <button className="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold">
-            Request Sample Audit
-          </button>
-        </div>
-      </section>
-
-      {/* SERVICES */}
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-6">
-
-          <h2 className="text-3xl font-bold mb-10">
-            Our Services
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-8">
-
-            <div className="bg-white p-6 rounded-xl shadow">
-              <h3 className="text-xl font-semibold mb-3">
-                Clinical Notes Quality Review
-              </h3>
-
-              <p>
-                Evaluate SOAP notes, clinical reasoning,
-                and documentation completeness.
-              </p>
+            <div className="hero-actions">
+              <button type="button" className="btn btn-primary">Request a sample audit</button>
+              <button type="button" className="btn btn-secondary">See example report</button>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow">
-              <h3 className="text-xl font-semibold mb-3">
-                DME Documentation Compliance
-              </h3>
-
-              <p>
-                Ensure documentation supports medical necessity
-                and functional limitation requirements.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow">
-              <h3 className="text-xl font-semibold mb-3">
-                Insurance Readiness Check
-              </h3>
-
-              <p>
-                Identify documentation gaps that could lead
-                to insurance claim rejection.
-              </p>
-            </div>
-
+            <ul className="hero-stats" aria-label="Service highlights">
+              <li>
+                <strong>48 hrs</strong>
+                <span>Initial findings turnaround</span>
+              </li>
+              <li>
+                <strong>HIPAA-aware</strong>
+                <span>De-identification workflow</span>
+              </li>
+              <li>
+                <strong>B2B focused</strong>
+                <span>Built for clinic leadership</span>
+              </li>
+            </ul>
           </div>
-        </div>
-      </section>
 
-      {/* CONFIDENTIALITY */}
-      <section className="bg-gray-100 py-20">
-        <div className="max-w-5xl mx-auto px-6">
-
-          <h2 className="text-3xl font-bold mb-6">
-            Confidentiality First
-          </h2>
-
-          <p className="mb-4">
-            All documentation submitted for review must be
-            de-identified before submission.
-          </p>
-
-          <p>
-            Files are treated as confidential and removed after
-            the audit process is completed.
-          </p>
-
-        </div>
-      </section>
-
-      {/* CONTACT */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-6">
-
-          <h2 className="text-3xl font-bold mb-6">
-            Request a Sample Audit
-          </h2>
-
-          <form className="grid gap-4">
-
-            <input
-              type="text"
-              placeholder="Company or Clinic Name"
-              className="p-3 border rounded"
+          <figure className="hero-media">
+            <img
+              src="/images/dme-workflow-hero.svg"
+              alt="Clinical documentation workflow board showing intake, audit review, and remediation handoff"
+              width="720"
+              height="540"
+              fetchPriority="high"
+              decoding="async"
             />
-
-            <input
-              type="email"
-              placeholder="Email"
-              className="p-3 border rounded"
-            />
-
-            <textarea
-              placeholder="Tell us about your documentation review needs"
-              className="p-3 border rounded"
-            />
-
-            <button className="bg-blue-900 text-white py-3 rounded">
-              Send Request
-            </button>
-
-          </form>
-
+          </figure>
         </div>
-      </section>
+      </header>
 
+      <main>
+        <section className="section process">
+          <div className="container">
+            <p className="eyebrow">Audit process</p>
+            <h2>A clear 3-step pathway from chart sample to corrective action.</h2>
+
+            <div className="steps-grid" role="list" aria-label="Three step DME audit process">
+              {auditSteps.map((step, index) => (
+                <article className="step-card" key={step.title} role="listitem">
+                  <span className="step-number">{index + 1}</span>
+                  <h3>{step.title}</h3>
+                  <p>{step.detail}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section report-showcase">
+          <div className="container report-layout">
+            <div>
+              <p className="eyebrow">Sample deliverable</p>
+              <h2>Audit report mockup designed for leadership decisions.</h2>
+              <p className="lede">
+                Every report combines denial-risk scoring, chart-level findings, and recommended policy updates so your team can prioritize what to fix first.
+              </p>
+
+              <ul className="focus-list">
+                {focusAreas.map((area) => (
+                  <li key={area}>{area}</li>
+                ))}
+              </ul>
+            </div>
+
+            <figure className="report-media">
+              <img
+                src="/images/sample-audit-report.svg"
+                alt="Mockup of a DME documentation audit report with compliance score, finding categories, and action list"
+                width="720"
+                height="520"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <section className="section trust-band">
+          <div className="container trust-layout">
+            <div>
+              <h2>Credibility-first, confidentiality-always.</h2>
+              <p>
+                We only review de-identified records, maintain strict access controls, and provide audit documentation aligned to payer expectations and internal quality programs.
+              </p>
+            </div>
+            <a className="inline-link" href="#">Download sample checklist</a>
+          </div>
+        </section>
+      </main>
     </div>
   )
 }
