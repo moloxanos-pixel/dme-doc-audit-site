@@ -113,12 +113,14 @@ export default function App() {
       <main id="main-content" tabIndex="-1">
         <section className="section process">
           <div className="container">
-            <p className="eyebrow">Audit process</p>
-            <h2>A practical 3-step workflow from sample selection to corrective action.</h2>
+            <div className="section-head">
+              <p className="eyebrow">Audit process</p>
+              <h2>A practical 3-step workflow from sample selection to corrective action.</h2>
+            </div>
 
             <div className="steps-grid" role="list" aria-label="Three step DME audit process">
               {auditSteps.map((step, index) => (
-                <article className="step-card" key={step.title} role="listitem">
+                <article className="step-card card-surface" key={step.title} role="listitem">
                   <span className="step-number">{index + 1}</span>
                   <h3>{step.title}</h3>
                   <p>{step.detail}</p>
@@ -130,8 +132,10 @@ export default function App() {
 
         <section className="section fit-check" aria-labelledby="fit-check-heading">
           <div className="container">
-            <p className="eyebrow">Quick fit check</p>
-            <h2 id="fit-check-heading">Best fit for teams that need fast, operational clarity.</h2>
+            <div className="section-head">
+              <p className="eyebrow">Quick fit check</p>
+              <h2 id="fit-check-heading">Best fit for teams that need fast, operational clarity.</h2>
+            </div>
             <ul className="fit-list">
               {fitChecklist.map((point) => (
                 <li key={point}>{point}</li>
@@ -142,7 +146,7 @@ export default function App() {
 
         <section className="section report-showcase" id="sample-audit">
           <div className="container report-layout">
-            <div>
+            <div className="section-head">
               <p className="eyebrow">Sample deliverable</p>
               <h2>Sample report format used for leadership and compliance review.</h2>
               <p className="lede">
@@ -183,12 +187,14 @@ export default function App() {
 
         <section className="section faq" aria-labelledby="faq-heading">
           <div className="container">
-            <p className="eyebrow">FAQ</p>
-            <h2 id="faq-heading">Common questions before kickoff.</h2>
+            <div className="section-head">
+              <p className="eyebrow">FAQ</p>
+              <h2 id="faq-heading">Common questions before kickoff.</h2>
+            </div>
 
             <div className="faq-list">
               {faqItems.map((item) => (
-                <details key={item.question} className="faq-item">
+                <details key={item.question} className="faq-item card-surface">
                   <summary>{item.question}</summary>
                   <p>{item.answer}</p>
                 </details>
@@ -199,7 +205,7 @@ export default function App() {
 
         <section className="section contact" id="contact-sales" aria-labelledby="contact-heading">
           <div className="container contact-layout">
-            <div>
+            <div className="section-head">
               <p className="eyebrow">Next step</p>
               <h2 id="contact-heading">Request a scoped DME audit plan.</h2>
               <p className="lede">
@@ -208,7 +214,7 @@ export default function App() {
               <p className="contact-note">Please do not include patient identifiers or clinical chart details in this form.</p>
             </div>
 
-            <form className="contact-form" action="#" method="post" aria-describedby="contact-privacy-note">
+            <form className="contact-form card-surface" action="#" method="post" aria-describedby="contact-privacy-note">
               <label htmlFor="fullName">Full name</label>
               <input id="fullName" name="fullName" type="text" autoComplete="name" required />
 
