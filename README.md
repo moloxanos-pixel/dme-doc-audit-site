@@ -1,16 +1,41 @@
-# React + Vite
+# DME Doc Audit Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React + Vite marketing site for Durable Medical Equipment (DME) documentation audit services.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This site presents:
 
-## React Compiler
+- A hero section describing the core value proposition.
+- Service cards for documentation and compliance review offerings.
+- A confidentiality section describing handling expectations for submitted records.
+- A contact form for requesting a sample audit.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React 19
+- Vite 7
+- Tailwind utility classes in component markup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+3. Open the local URL shown in your terminal (usually `http://localhost:5173`).
+
+## Available Scripts
+
+- `npm run dev` — start development server.
+- `npm run build` — create a production build.
+- `npm run preview` — preview the production build locally.
+- `npm run lint` — run ESLint.
