@@ -107,6 +107,10 @@ p {
   font-weight: 600;
   font-size: 0.95rem;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-primary {
@@ -118,6 +122,13 @@ p {
   background: var(--accent-soft);
   border-color: #cfd9eb;
   color: var(--navy);
+}
+
+.btn:focus-visible,
+.inline-link:focus-visible,
+input:focus-visible {
+  outline: 3px solid #8bb1ff;
+  outline-offset: 2px;
 }
 
 .hero-stats {
@@ -236,6 +247,48 @@ p {
   font-weight: 600;
 }
 
+
+.contact {
+  border-top: 1px solid var(--line);
+}
+
+.contact-layout {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.contact-note {
+  margin-top: 0.75rem;
+  font-size: 0.92rem;
+}
+
+.contact-form {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  padding: 1rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 0.92rem;
+}
+
+.contact-form input {
+  border: 1px solid #c4d1e5;
+  border-radius: 0.55rem;
+  padding: 0.62rem 0.7rem;
+  font: inherit;
+  color: var(--ink);
+}
+
+.contact-form .btn {
+  margin-top: 0.25rem;
+}
+
 @media (min-width: 860px) {
   .section {
     padding: 4.8rem 0;
@@ -263,5 +316,15 @@ p {
   .trust-layout {
     grid-template-columns: 1fr auto;
     align-items: end;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.8rem;
+    align-items: start;
+  }
+
+  .contact-form {
+    padding: 1.25rem;
   }
 }
