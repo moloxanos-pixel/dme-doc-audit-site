@@ -38,8 +38,8 @@ export default function App() {
             </p>
 
             <div className="hero-actions">
-              <button type="button" className="btn btn-primary">Request a sample audit</button>
-              <button type="button" className="btn btn-secondary">See example report</button>
+              <a className="btn btn-primary" href="#contact-sales">Request a sample audit</a>
+              <a className="btn btn-secondary" href="#sample-audit">See example report</a>
             </div>
 
             <ul className="hero-stats" aria-label="Service highlights">
@@ -89,7 +89,7 @@ export default function App() {
           </div>
         </section>
 
-        <section className="section report-showcase">
+        <section className="section report-showcase" id="sample-audit">
           <div className="container report-layout">
             <div>
               <p className="eyebrow">Sample deliverable</p>
@@ -126,7 +126,36 @@ export default function App() {
                 We only review de-identified records, maintain strict access controls, and provide audit documentation aligned to payer expectations and internal quality programs.
               </p>
             </div>
-            <a className="inline-link" href="#">Download sample checklist</a>
+            <a className="inline-link" href="#sample-audit">Download sample checklist</a>
+          </div>
+        </section>
+
+        <section className="section contact" id="contact-sales" aria-labelledby="contact-heading">
+          <div className="container contact-layout">
+            <div>
+              <p className="eyebrow">Next step</p>
+              <h2 id="contact-heading">Book a scoped documentation review.</h2>
+              <p className="lede">
+                Share your organization details and we&apos;ll align on sample size, turnaround, and communication cadence.
+              </p>
+              <p className="contact-note">Please do not include patient identifiers or clinical chart details in this form.</p>
+            </div>
+
+            <form className="contact-form" action="#" method="post">
+              <label htmlFor="fullName">Full name</label>
+              <input id="fullName" name="fullName" type="text" autoComplete="name" required />
+
+              <label htmlFor="workEmail">Work email</label>
+              <input id="workEmail" name="workEmail" type="email" autoComplete="email" required />
+
+              <label htmlFor="organization">Organization</label>
+              <input id="organization" name="organization" type="text" autoComplete="organization" required />
+
+              <label htmlFor="role">Role</label>
+              <input id="role" name="role" type="text" autoComplete="organization-title" required />
+
+              <button type="submit" className="btn btn-primary">Request consultation</button>
+            </form>
           </div>
         </section>
       </main>
