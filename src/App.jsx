@@ -46,6 +46,7 @@ const faqItems = [
 export default function App() {
   return (
     <div className="site-shell">
+      <a className="skip-link" href="#main-content">Skip to main content</a>
       <header className="hero section">
         <div className="container hero-layout">
           <div className="hero-copy">
@@ -62,8 +63,8 @@ export default function App() {
 
             <ul className="hero-stats" aria-label="Service highlights">
               <li>
-                <strong>48 hrs</strong>
-                <span>Initial findings turnaround</span>
+                <strong>Typically 48 hrs</strong>
+                <span>Initial findings for standard sample sizes</span>
               </li>
               <li>
                 <strong>HIPAA-aware</strong>
@@ -74,6 +75,8 @@ export default function App() {
                 <span>Built for clinic leadership</span>
               </li>
             </ul>
+
+            <p className="hero-disclaimer">Turnaround timing varies by chart count and documentation complexity.</p>
           </div>
 
           <figure className="hero-media">
@@ -89,7 +92,7 @@ export default function App() {
         </div>
       </header>
 
-      <main>
+      <main id="main-content" tabIndex="-1">
         <section className="section process">
           <div className="container">
             <p className="eyebrow">Audit process</p>
@@ -175,7 +178,7 @@ export default function App() {
               <p className="contact-note">Please do not include patient identifiers or clinical chart details in this form.</p>
             </div>
 
-            <form className="contact-form" action="#" method="post">
+            <form className="contact-form" action="#" method="post" aria-describedby="contact-privacy-note">
               <label htmlFor="fullName">Full name</label>
               <input id="fullName" name="fullName" type="text" autoComplete="name" required />
 
@@ -189,6 +192,9 @@ export default function App() {
               <input id="role" name="role" type="text" autoComplete="organization-title" required />
 
               <button type="submit" className="btn btn-primary">Request consultation</button>
+              <p id="contact-privacy-note" className="sr-only">
+                This request form is for business contact details only. Do not submit protected health information.
+              </p>
             </form>
           </div>
         </section>

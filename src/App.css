@@ -24,6 +24,21 @@ body {
   min-height: 100vh;
 }
 
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -2.5rem;
+  background: var(--navy);
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  z-index: 10;
+}
+
+.skip-link:focus-visible {
+  top: 0.75rem;
+}
+
 .container {
   width: min(1120px, 92vw);
   margin: 0 auto;
@@ -156,6 +171,11 @@ input:focus-visible {
 .hero-stats span {
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.hero-disclaimer {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
 }
 
 .hero-media,
@@ -317,6 +337,18 @@ input:focus-visible {
 
 .contact-form .btn {
   margin-top: 0.25rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 @media (min-width: 860px) {
