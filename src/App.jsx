@@ -25,6 +25,24 @@ const focusAreas = [
   'Template consistency across clinicians',
 ]
 
+const faqItems = [
+  {
+    question: 'How many charts should we include in a sample audit?',
+    answer:
+      'Most organizations start with 15 to 25 recent encounters across high-volume clinicians so we can identify repeatable documentation patterns quickly.',
+  },
+  {
+    question: 'Do you review by payer requirements?',
+    answer:
+      'Yes. We align findings to Medicare and commercial payer expectations and call out where language or order detail creates denial exposure.',
+  },
+  {
+    question: 'Can the audit support provider education?',
+    answer:
+      'Absolutely. Each engagement includes coaching-ready examples your compliance and operations leads can reuse in documentation training.',
+  },
+]
+
 export default function App() {
   return (
     <div className="site-shell">
@@ -127,6 +145,22 @@ export default function App() {
               </p>
             </div>
             <a className="inline-link" href="#sample-audit">Download sample checklist</a>
+          </div>
+        </section>
+
+        <section className="section faq" aria-labelledby="faq-heading">
+          <div className="container">
+            <p className="eyebrow">FAQ</p>
+            <h2 id="faq-heading">Common questions before kickoff.</h2>
+
+            <div className="faq-list">
+              {faqItems.map((item) => (
+                <details key={item.question} className="faq-item">
+                  <summary>{item.question}</summary>
+                  <p>{item.answer}</p>
+                </details>
+              ))}
+            </div>
           </div>
         </section>
 
