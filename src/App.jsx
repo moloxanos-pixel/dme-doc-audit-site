@@ -1,129 +1,163 @@
+import workflowHero from './assets/workflow-hero.svg'
+
+const processSteps = [
+  {
+    title: '1. Intake & Scope',
+    description:
+      'Submit de-identified notes, order details, and payer targets. We align the review to your denial and risk profile.',
+  },
+  {
+    title: '2. Clinical Audit',
+    description:
+      'Auditors evaluate medical necessity language, functional limitations, and face-to-face documentation against DME requirements.',
+  },
+  {
+    title: '3. Action Plan',
+    description:
+      'Receive prioritized fixes, provider coaching notes, and denial-prevention recommendations your team can implement quickly.',
+  },
+]
+
+const reportFindings = [
+  { label: 'Medical Necessity Support', score: '88%' },
+  { label: 'LCD/Policy Alignment', score: '81%' },
+  { label: 'Order & Note Consistency', score: '74%' },
+]
+
 export default function App() {
   return (
-    <div className="min-h-screen bg-gray-50">
-
-      {/* HERO */}
-      <section className="bg-blue-900 text-white py-20">
-        <div className="max-w-5xl mx-auto px-6">
-          <h1 className="text-4xl font-bold mb-6">
-            Clinical Documentation Audit for DME Providers
-          </h1>
-
-          <p className="text-lg mb-8">
-            Improve documentation quality, reduce claim denials,
-            and ensure DME medical necessity is clearly supported.
+    <div className="min-h-screen bg-slate-50 text-slate-900">
+      <header className="border-b border-slate-200 bg-white/95 backdrop-blur-sm">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
+          <p className="text-sm font-semibold tracking-wide text-slate-700">
+            DME Documentation Audit Services
           </p>
-
-          <button className="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold">
-            Request Sample Audit
+          <button className="rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:text-slate-950">
+            Book Discovery Call
           </button>
         </div>
-      </section>
+      </header>
 
-      {/* SERVICES */}
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-6">
-
-          <h2 className="text-3xl font-bold mb-10">
-            Our Services
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-8">
-
-            <div className="bg-white p-6 rounded-xl shadow">
-              <h3 className="text-xl font-semibold mb-3">
-                Clinical Notes Quality Review
-              </h3>
-
-              <p>
-                Evaluate SOAP notes, clinical reasoning,
-                and documentation completeness.
+      <main>
+        <section className="border-b border-slate-200 bg-gradient-to-b from-white via-slate-50 to-slate-100">
+          <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 md:items-center md:py-20">
+            <div>
+              <p className="mb-4 inline-flex rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-slate-700">
+                Credibility-first clinical QA
               </p>
+              <h1 className="text-3xl font-bold leading-tight text-slate-950 sm:text-4xl md:text-5xl">
+                Defensible DME documentation, before claims are at risk.
+              </h1>
+              <p className="mt-5 max-w-xl text-base leading-7 text-slate-700 sm:text-lg">
+                We audit real clinical documentation workflows for DME providers and rehab clinics,
+                helping teams reduce denials, improve note consistency, and strengthen payer-ready
+                medical necessity narratives.
+              </p>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <button className="rounded-md bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">
+                  Request Sample Audit Report
+                </button>
+                <button className="rounded-md border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 transition hover:border-slate-400">
+                  View Audit Scope
+                </button>
+              </div>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow">
-              <h3 className="text-xl font-semibold mb-3">
-                DME Documentation Compliance
-              </h3>
-
-              <p>
-                Ensure documentation supports medical necessity
-                and functional limitation requirements.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow">
-              <h3 className="text-xl font-semibold mb-3">
-                Insurance Readiness Check
-              </h3>
-
-              <p>
-                Identify documentation gaps that could lead
-                to insurance claim rejection.
-              </p>
-            </div>
-
+            <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+              <img
+                src={workflowHero}
+                alt="Clinical documentation team reviewing DME note quality checkpoints and audit workflow"
+                className="h-full w-full object-cover"
+                width="768"
+                height="576"
+                decoding="async"
+                fetchPriority="high"
+              />
+            </figure>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* CONFIDENTIALITY */}
-      <section className="bg-gray-100 py-20">
-        <div className="max-w-5xl mx-auto px-6">
+        <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 md:py-20">
+          <div className="mb-10 max-w-2xl">
+            <h2 className="text-2xl font-bold text-slate-950 sm:text-3xl">How the audit works</h2>
+            <p className="mt-3 text-slate-700">
+              A concise three-step process designed for compliance teams, clinical leads, and revenue
+              cycle managers.
+            </p>
+          </div>
 
-          <h2 className="text-3xl font-bold mb-6">
-            Confidentiality First
-          </h2>
+          <div className="grid gap-4 md:grid-cols-3 md:gap-6">
+            {processSteps.map((step) => (
+              <article key={step.title} className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+                <h3 className="text-lg font-semibold text-slate-900">{step.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-slate-700">{step.description}</p>
+              </article>
+            ))}
+          </div>
+        </section>
 
-          <p className="mb-4">
-            All documentation submitted for review must be
-            de-identified before submission.
-          </p>
+        <section className="border-y border-slate-200 bg-white">
+          <div className="mx-auto grid max-w-6xl gap-8 px-4 py-14 sm:px-6 lg:grid-cols-[1fr_1.1fr] lg:items-center md:py-20">
+            <div>
+              <h2 className="text-2xl font-bold text-slate-950 sm:text-3xl">Sample audit report preview</h2>
+              <p className="mt-4 text-slate-700">
+                Each report translates chart-level observations into an executive summary, risk-ranked
+                findings, and concrete remediation steps for documentation teams.
+              </p>
+              <ul className="mt-5 space-y-2 text-sm text-slate-700">
+                <li>• Payer-focused compliance findings with evidence references</li>
+                <li>• Note quality scorecard across medical necessity criteria</li>
+                <li>• Recommended language and workflow corrections by priority</li>
+              </ul>
+            </div>
 
-          <p>
-            Files are treated as confidential and removed after
-            the audit process is completed.
-          </p>
+            <article className="rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm sm:p-6">
+              <div className="rounded-xl border border-slate-200 bg-white p-4 sm:p-5">
+                <div className="flex items-center justify-between border-b border-slate-200 pb-3">
+                  <p className="text-sm font-semibold text-slate-900">DME Audit Report — Q2 Sample</p>
+                  <span className="rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-700">
+                    Medium Risk
+                  </span>
+                </div>
+                <div className="mt-4 space-y-3">
+                  {reportFindings.map((finding) => (
+                    <div key={finding.label} className="rounded-lg border border-slate-200 p-3">
+                      <div className="mb-2 flex items-center justify-between text-sm">
+                        <span className="font-medium text-slate-800">{finding.label}</span>
+                        <span className="font-semibold text-slate-900">{finding.score}</span>
+                      </div>
+                      <div className="h-2 rounded-full bg-slate-100">
+                        <div
+                          className="h-2 rounded-full bg-slate-700"
+                          style={{ width: finding.score }}
+                          aria-hidden="true"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-4 rounded-md bg-amber-50 p-3 text-xs leading-5 text-amber-900">
+                  Priority recommendation: standardize functional limitation statements in evaluation and
+                  progress notes to improve policy alignment.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
 
-        </div>
-      </section>
-
-      {/* CONTACT */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-6">
-
-          <h2 className="text-3xl font-bold mb-6">
-            Request a Sample Audit
-          </h2>
-
-          <form className="grid gap-4">
-
-            <input
-              type="text"
-              placeholder="Company or Clinic Name"
-              className="p-3 border rounded"
-            />
-
-            <input
-              type="email"
-              placeholder="Email"
-              className="p-3 border rounded"
-            />
-
-            <textarea
-              placeholder="Tell us about your documentation review needs"
-              className="p-3 border rounded"
-            />
-
-            <button className="bg-blue-900 text-white py-3 rounded">
-              Send Request
+        <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 md:py-20">
+          <div className="rounded-2xl bg-slate-900 px-6 py-10 text-white sm:px-10">
+            <h2 className="text-2xl font-bold sm:text-3xl">Ready for a documentation risk baseline?</h2>
+            <p className="mt-3 max-w-2xl text-slate-200">
+              Send a de-identified sample chart set and receive a focused audit summary in 5 business
+              days.
+            </p>
+            <button className="mt-6 rounded-md bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100">
+              Start a Confidential Sample Audit
             </button>
-
-          </form>
-
-        </div>
-      </section>
-
+          </div>
+        </section>
+      </main>
     </div>
   )
 }
