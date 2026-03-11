@@ -1,6 +1,7 @@
 import PageHero from "../components/PageHero";
 import WorkflowIllustration from "../components/WorkflowIllustration";
 import SectionTitle from "../components/SectionTitle";
+import usePageMeta from "../components/usePageMeta";
 import {
   ClockArrowIcon,
   CompassPulseIcon,
@@ -64,28 +65,33 @@ const included = [
 
 const faqs = [
   {
-    question: "Can this site support a basic request flow or a secure intake process?",
+    question: "Can your team support a basic request flow or a secure intake process?",
     answer:
-      "Yes. The Request Review page can connect to a standard contact flow, secure uploader, CRM, or custom backend.",
+      "Yes. The Request Review page can connect to a standard contact flow, secure uploader, CRM, or custom backend endpoint.",
   },
   {
-    question: "Is the design responsive across desktop and mobile?",
+    question: "Is the experience responsive across desktop and mobile?",
     answer:
       "Yes. The layout uses responsive grids, flexible cards, and mobile-friendly navigation for consistent usability.",
   },
   {
-    question: "Can we add case studies or pricing later?",
+    question: "Can we add case studies or pricing details later?",
     answer:
       "Yes. The page structure is modular, so additional sections and service detail pages can be added without redesigning the core layout.",
   },
   {
-    question: "Does this preserve the current value proposition?",
+    question: "Does this service model preserve a compliance-focused value proposition?",
     answer:
       "Yes. The core message remains focused on faster approvals, fewer avoidable denials, and stronger documentation readiness.",
   },
 ];
 
 export default function ServicesPage() {
+  usePageMeta(
+    "DME Audit Services | DME Records Reviews",
+    "Explore batch documentation reviews, medical necessity checkpoints, and recurring QA support for DME submission teams.",
+  );
+
   return (
     <>
       <PageHero

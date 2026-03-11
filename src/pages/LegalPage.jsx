@@ -1,6 +1,9 @@
 import PageHero from "../components/PageHero";
+import usePageMeta from "../components/usePageMeta";
 
-export default function LegalPage({ title, intro, updatedLabel, sections }) {
+export default function LegalPage({ title, intro, updatedLabel, sections, metaTitle, metaDescription }) {
+  usePageMeta(metaTitle || `${title} | DME Records Reviews`, metaDescription);
+
   return (
     <>
       <PageHero
@@ -10,9 +13,9 @@ export default function LegalPage({ title, intro, updatedLabel, sections }) {
         panel={
           <div className="page-hero__panel__content legal-panel">
             <span className="eyebrow eyebrow--dark">Review before launch</span>
-            <h3 className="page-hero__mini-title">Production-ready legal page structure.</h3>
+            <h3 className="page-hero__mini-title">Legal terms for website and intake use.</h3>
             <p className="page-hero__mini-copy">
-              Confirm this content with legal counsel so published language reflects your actual workflow and compliance obligations.
+              Review this page periodically so published language remains accurate for your workflows, data handling, and compliance obligations.
             </p>
           </div>
         }
@@ -40,7 +43,7 @@ export default function LegalPage({ title, intro, updatedLabel, sections }) {
               <div>
                 <strong>Publication checklist</strong>
                 <p>
-                  Before publishing, validate legal language, contact details, and policy statements against your live data-handling practices.
+                  Validate legal language, contact details, and policy statements against your current operating practices before each release.
                 </p>
               </div>
             </div>

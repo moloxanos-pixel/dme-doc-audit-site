@@ -86,6 +86,7 @@ export default function SiteLayout({ children }) {
             </div>
 
             <div className="site-footer__links">
+              <Link to="/">Home</Link>
               <Link to="/services">Services</Link>
               <Link to="/about">About</Link>
               <Link to="/request-review">Request Review</Link>

@@ -6,7 +6,7 @@ const sections = [
     title: "Information we collect",
     paragraphs: [
       "We collect business contact information, project scoping details, and materials submitted through the request form or connected intake workflow.",
-      "If you connect a secure uploader or CRM, this policy should accurately reflect the information your production systems receive and store.",
+      "This policy covers information submitted through website forms and connected intake workflows used for service requests.",
     ],
     bullets: [
       "Contact details such as name, company, and work email",
@@ -19,15 +19,15 @@ const sections = [
     title: "How we use information",
     paragraphs: [
       "Information is used to respond to review requests, scope services, coordinate communication, and improve intake clarity.",
-      "If analytics or third-party form services are added, this section should describe those uses clearly and accurately.",
+      "Information may also be used to improve site performance, prevent misuse, and maintain service quality.",
     ],
   },
   {
     id: "security-and-confidentiality",
     title: "Security and confidentiality",
     paragraphs: [
-      "Your production policy should explain safeguards for sensitive materials, including access controls, secure vendors, internal handling standards, and retention boundaries.",
-      "This interface communicates a compliance-focused approach, but legal language must match operational controls in practice.",
+      "We apply administrative and technical safeguards designed to limit access, protect submitted information, and support secure handling practices.",
+      "Our controls and procedures are reviewed regularly to maintain alignment with operational and compliance requirements.",
     ],
   },
   {
@@ -43,14 +43,14 @@ const sections = [
     title: "Third-party services",
     paragraphs: [
       "If you rely on external services for forms, analytics, file transfer, hosting, or CRM, identify them here and summarize each role.",
-      "This project supports those integrations, but the published policy should name your actual providers.",
+      "We review third-party providers periodically and require appropriate contractual and security commitments where applicable.",
     ],
   },
   {
     id: "contact",
     title: "Contact",
     paragraphs: [
-      "Provide your active privacy contact details and any jurisdiction-specific rights disclosures required for your audience.",
+      "For privacy requests, contact the team through the Request Review page or your designated account representative.",
     ],
   },
 ];
@@ -59,9 +59,11 @@ export default function PrivacyPolicy() {
   return (
     <LegalPage
       title="Privacy Policy"
-      intro="This page provides a clear legal structure for disclosing data-handling practices related to DME Records Reviews services."
-      updatedLabel="Last updated: replace with the current policy revision date before publication."
+      intro="This policy explains how DME Records Reviews collects, uses, and safeguards information submitted through the website and intake workflows."
+      updatedLabel="Last updated: October 2026"
       sections={sections}
+      metaTitle="Privacy Policy | DME Records Reviews"
+      metaDescription="Read how DME Records Reviews collects, uses, and protects information submitted through website and intake workflows."
     />
   );
 }

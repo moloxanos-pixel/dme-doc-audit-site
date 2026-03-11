@@ -1,6 +1,7 @@
 import PageHero from "../components/PageHero";
 import HeroIllustration from "../components/HeroIllustration";
 import SectionTitle from "../components/SectionTitle";
+import usePageMeta from "../components/usePageMeta";
 
 const values = [
   {
@@ -24,7 +25,7 @@ const timeline = [
   {
     title: "Define the documentation risk",
     description:
-      "The experience starts by clarifying common submission risks and the operational impact of incomplete records.",
+      "The experience starts by clarifying common submission risks and the operational impact of incomplete documentation.",
   },
   {
     title: "Present the review method",
@@ -39,6 +40,11 @@ const timeline = [
 ];
 
 export default function AboutPage() {
+  usePageMeta(
+    "About Our DME Review Approach | DME Records Reviews",
+    "Learn how DME Records Reviews combines structured criteria and human judgment to deliver clear, actionable documentation audit findings.",
+  );
+
   return (
     <>
       <PageHero
@@ -53,7 +59,7 @@ export default function AboutPage() {
           <article className="story-panel">
             <SectionTitle
               eyebrow="Why this approach works"
-              title="From a basic landing page to a complete service narrative."
+              title="A complete service narrative built for decision-makers."
               intro="The information architecture supports decision-making by presenting scope, process, trust signals, and action steps in a logical flow."
             />
 
