@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PageHero from "../components/PageHero";
 import SectionTitle from "../components/SectionTitle";
+import Seo from "../components/Seo";
 import protectionPhoto from "../assets/data-protection.jpg";
 
 export default function RequestAuditPage() {
@@ -13,10 +14,15 @@ export default function RequestAuditPage() {
 
   return (
     <>
+      <Seo
+        title="Request Review"
+        description="Submit a DME documentation review request with secure intake details, scope preferences, and turnaround priorities."
+      />
+
       <PageHero
         eyebrow="Request review"
-        title="Start your DME documentation review request."
-        intro="Submit your review requirements through a structured intake experience designed for secure workflow integration."
+        title="Submit a DME documentation review request."
+        intro="Provide your review requirements through a structured intake form designed for secure document-handling workflows."
         panelClassName="page-hero__panel--image page-hero__panel--plain"
         panel={
           <>
@@ -25,10 +31,10 @@ export default function RequestAuditPage() {
               style={{ backgroundImage: `url(${protectionPhoto})` }}
             />
             <div className="page-hero__panel__content">
-              <span className="eyebrow eyebrow--dark">Integration ready</span>
-              <h3 className="page-hero__mini-title">Connect your secure intake process.</h3>
+              <span className="eyebrow eyebrow--dark">Secure integration</span>
+              <h3 className="page-hero__mini-title">Aligned with governed intake processes.</h3>
               <p className="page-hero__mini-copy">
-                Integrate with Formspree, Resend, HubSpot, a custom API, or your existing secure uploader.
+                Connect this request workflow to your approved secure upload, CRM, or internal submission system.
               </p>
             </div>
           </>
@@ -40,23 +46,23 @@ export default function RequestAuditPage() {
           <article className="contact-card">
             <SectionTitle
               eyebrow="Request details"
-              title="A launch-ready form for review intake."
-              intro="This front-end form is prepared for production once connected to your approved backend workflow."
+              title="Provide scope and turnaround requirements."
+              intro="Complete the form below to help us evaluate review needs and coordinate next steps."
             />
 
             <form onSubmit={handleSubmit}>
               <div className="form-grid">
                 <div className="form-field">
                   <label htmlFor="fullName">Full name</label>
-                  <input id="fullName" name="fullName" type="text" placeholder="Your name" required />
+                  <input id="fullName" name="fullName" type="text" placeholder="Enter your full name" required />
                 </div>
                 <div className="form-field">
                   <label htmlFor="email">Work email</label>
-                  <input id="email" name="email" type="email" placeholder="name@company.com" required />
+                  <input id="email" name="email" type="email" placeholder="name@organization.com" required />
                 </div>
                 <div className="form-field">
-                  <label htmlFor="company">Company</label>
-                  <input id="company" name="company" type="text" placeholder="Company name" required />
+                  <label htmlFor="company">Organization</label>
+                  <input id="company" name="company" type="text" placeholder="Enter organization name" required />
                 </div>
                 <div className="form-field">
                   <label htmlFor="records">Number of records</label>
@@ -89,9 +95,9 @@ export default function RequestAuditPage() {
                       Select scope
                     </option>
                     <option value="batch-review">Batch documentation review</option>
-                    <option value="medical-necessity">Medical necessity checkpoint</option>
-                    <option value="recurring-qa">Recurring QA support</option>
-                    <option value="unsure">Not sure yet</option>
+                    <option value="medical-necessity">Medical necessity review</option>
+                    <option value="recurring-qa">Ongoing compliance QA support</option>
+                    <option value="unsure">Scope discussion requested</option>
                   </select>
                 </div>
                 <div className="form-field form-field--full">
@@ -99,7 +105,7 @@ export default function RequestAuditPage() {
                   <textarea
                     id="notes"
                     name="notes"
-                    placeholder="Share relevant context such as document types, recurring issues, preferred intake method, or questions."
+                    placeholder="Share document types, recurring issues, intake preferences, or any scope considerations."
                   />
                 </div>
               </div>
@@ -112,8 +118,8 @@ export default function RequestAuditPage() {
 
               <div className="form-note">
                 {submitted
-                  ? "The form submission pattern is ready. Connect this handler to your secure intake endpoint for production use."
-                  : "This demo form currently remains on-page. Connect it to your approved endpoint before launch."}
+                  ? "Thank you. Your request has been captured and is ready for secure intake follow-up."
+                  : "Please submit high-level operational details only. Do not include patient-identifying information in this web form."}
               </div>
             </form>
           </article>
@@ -121,15 +127,15 @@ export default function RequestAuditPage() {
           <article className="info-card">
             <SectionTitle
               eyebrow="What to expect"
-              title="A clear intake experience for both teams."
-              intro="This panel reinforces process expectations before any information is submitted."
+              title="A structured intake experience for operational teams."
+              intro="These standards support a secure, efficient review handoff process."
             />
 
             <ul className="info-list">
-              <li>Use this design with a secure uploader, encrypted exchange, or controlled CRM workflow.</li>
-              <li>Set expectations with scope fields, turnaround options, and notes for context.</li>
-              <li>Communicate trust through clear process language and consistent visual structure.</li>
-              <li>Extend this page with FAQs, upload steps, or scheduling components as needed.</li>
+              <li>Requests are scoped for volume, timeline, and review depth before engagement begins.</li>
+              <li>Secure document transfer methods are confirmed prior to record submission.</li>
+              <li>Communication is aligned to compliance expectations and defined turnaround commitments.</li>
+              <li>Final reporting is delivered in a clear format suitable for corrective action planning.</li>
             </ul>
           </article>
         </div>

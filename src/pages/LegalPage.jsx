@@ -9,10 +9,10 @@ export default function LegalPage({ title, intro, updatedLabel, sections }) {
         intro={intro}
         panel={
           <div className="page-hero__panel__content legal-panel">
-            <span className="eyebrow eyebrow--dark">Review before launch</span>
-            <h3 className="page-hero__mini-title">Production-ready legal page structure.</h3>
+            <span className="eyebrow eyebrow--dark">Compliance documentation</span>
+            <h3 className="page-hero__mini-title">Clear legal terms for website and service operations.</h3>
             <p className="page-hero__mini-copy">
-              Confirm this content with legal counsel so published language reflects your actual workflow and compliance obligations.
+              This summary is provided for informational purposes and should be reviewed with legal counsel for jurisdiction-specific requirements.
             </p>
           </div>
         }
@@ -38,9 +38,9 @@ export default function LegalPage({ title, intro, updatedLabel, sections }) {
                 <span className="legal-icon">!</span>
               </div>
               <div>
-                <strong>Publication checklist</strong>
+                <strong>Important notice</strong>
                 <p>
-                  Before publishing, validate legal language, contact details, and policy statements against your live data-handling practices.
+                  Review legal language regularly to ensure alignment with your current operating procedures, privacy practices, and service agreements.
                 </p>
               </div>
             </div>

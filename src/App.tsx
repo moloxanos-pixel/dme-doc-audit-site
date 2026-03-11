@@ -127,7 +127,7 @@ function Header() {
             <ShieldCheckIcon className="h-6 w-6" />
           </div>
           <div>
-            <p className="text-3xl font-semibold tracking-tight text-[#21499a]">DME Doc Audit</p>
+            <p className="text-3xl font-semibold tracking-tight text-[#21499a]">DME Records Reviews</p>
             <p className="text-xs font-medium uppercase tracking-[0.18em] text-slate-500">Clinical documentation review</p>
           </div>
         </a>
@@ -383,18 +383,18 @@ function ContactSection() {
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-white/80">Next step</p>
           <h2 className="mt-4 font-serif text-4xl leading-tight sm:text-5xl">Request a sample audit or talk through your current workflow.</h2>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-white/85">
-            Replace the placeholder email route below with your real form or scheduling link. Keep the inquiry simple and do not request patient details in a standard website form.
+            Use an approved business inquiry channel for scheduling or intake coordination. Do not submit patient-identifying information through standard website forms.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <a
-              href="mailto:hello@example.com"
+              href="mailto:contact@dmerecordsreviews.com"
               className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#21499a] transition hover:bg-slate-100"
             >
               Request sample audit
             </a>
             <a
-              href="mailto:hello@example.com"
+              href="mailto:contact@dmerecordsreviews.com"
               className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
             >
               Ask for sample report
@@ -410,7 +410,7 @@ function Footer() {
   return (
     <footer className="bg-[#173574] py-8 text-sm text-white/80">
       <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
-        <p>© {new Date().getFullYear()} DME Doc Audit</p>
+        <p>© {new Date().getFullYear()} DME Records Reviews</p>
         <p>Designed for clarity, trust, and cleaner documentation workflows.</p>
       </div>
     </footer>

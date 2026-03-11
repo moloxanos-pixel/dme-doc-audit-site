@@ -8,14 +8,15 @@ import {
   ShieldCheckIcon,
 } from "../components/Icons";
 import checklistPhoto from "../assets/checklist-review.jpg";
+import Seo from "../components/Seo";
 import tabletPhoto from "../assets/tablet-review.jpg";
 import protectionPhoto from "../assets/data-protection.jpg";
 
 const stats = [
-  { value: "5000+", label: "records reviewed before submission" },
-  { value: "2%", label: "medical necessity concerns identified" },
-  { value: "8%", label: "administrative issues identified" },
-  { value: "$0.85", label: "starting point per record" },
+  { value: "Comprehensive", label: "documentation completeness checks" },
+  { value: "Targeted", label: "medical necessity review checkpoints" },
+  { value: "Structured", label: "record-level issue categorization" },
+  { value: "Reliable", label: "professional reporting turnaround" },
 ];
 
 const features = [
@@ -60,16 +61,20 @@ const steps = [
 export default function HomePage() {
   return (
     <>
+      <Seo
+        title="Home"
+        description="Compliance-focused DME documentation and medical necessity reviews designed to improve submission quality and reduce avoidable denials."
+      />
+
       <section className="hero">
         <div className="container hero__grid">
           <div className="hero__content">
-            <span className="eyebrow">AI-assisted and human-reviewed workflows</span>
+            <span className="eyebrow">Compliance-focused DME record review</span>
             <h1 className="hero__title">
-              Documentation audits designed for faster, cleaner DME submissions.
+              Professional DME documentation reviews that strengthen submission readiness.
             </h1>
             <p className="hero__lede">
-              Improve documentation quality, reduce preventable denials, and move each
-              record toward submission readiness with a structured review process.
+              Our review process identifies documentation gaps early, supports medical necessity validation, and helps teams submit cleaner files with confidence.
             </p>
 
             <div className="hero__actions">
@@ -107,13 +112,13 @@ export default function HomePage() {
             </div>
 
             <div className="hero__floating-note hero__floating-note--top">
-              <strong>Structured review workflow</strong>
-              <span>Built to support consistent quality, visibility, and control.</span>
+              <strong>Structured review methodology</strong>
+              <span>Built for consistent quality, clear accountability, and operational control.</span>
             </div>
 
             <div className="hero__floating-note hero__floating-note--bottom">
-              <strong>Submission-ready insights</strong>
-              <span>Record-level findings and recommendations your team can act on quickly.</span>
+              <strong>Actionable compliance findings</strong>
+              <span>Record-level findings and correction priorities your team can apply immediately.</span>
             </div>
           </div>
         </div>
@@ -135,8 +140,8 @@ export default function HomePage() {
           <SectionTitle
             align="center"
             eyebrow="What your team receives"
-            title="A practical review layer between document preparation and payer submission."
-            intro="The platform is designed for clarity and accountability, so teams can identify issues quickly and complete corrections with confidence."
+            title="A disciplined review layer between document preparation and payer submission."
+            intro="Our reporting model is designed for clarity and accountability, enabling teams to complete corrections efficiently and accurately."
           />
 
           <div className="feature-grid">
@@ -161,8 +166,8 @@ export default function HomePage() {
           <div>
             <SectionTitle
               eyebrow="How it works"
-              title="A review process built for speed, accuracy, and clear handoffs."
-              intro="Each step is structured to help documentation teams prioritize corrections, maintain throughput, and improve file quality."
+              title="A review process built for consistency, accuracy, and efficient handoffs."
+              intro="Each step is structured to help documentation teams prioritize corrective action, maintain throughput, and improve documentation quality."
             />
 
             <div className="process-list">
@@ -215,8 +220,8 @@ export default function HomePage() {
         <div className="container">
           <SectionTitle
             eyebrow="Review coverage"
-            title="Visual reporting backed by measurable review outcomes."
-            intro="Each review area is presented with clear language so internal teams and clients understand findings and required actions."
+            title="Clear reporting backed by measurable review outcomes."
+            intro="Each review area is communicated in precise language so teams understand findings, risk level, and required actions."
           />
 
           <div className="media-grid">
@@ -230,7 +235,7 @@ export default function HomePage() {
               <div className="media-card__body">
                 <div>
                   <span className="eyebrow eyebrow--dark">Documentation completeness review</span>
-                  <h3>Identify missing elements before intake delays occur.</h3>
+                  <h3>Identify missing documentation before submission delays occur.</h3>
                   <p>
                     Signature gaps, missing dates, order inconsistencies, and support
                     documentation issues are flagged in a consistent review format.
@@ -255,9 +260,9 @@ export default function HomePage() {
                 <div className="media-card__body">
                   <div>
                     <span className="eyebrow">Coordinated handoff</span>
-                    <h3>One view for reviewers, intake teams, and operations.</h3>
+                    <h3>One reporting view for reviewers, intake teams, and operations.</h3>
                     <p>
-                      Use a shared format for status, comments, and correction priorities so next steps are clear.
+                      Use a shared format for status, reviewer comments, and correction priorities so handoffs remain clear.
                     </p>
                   </div>
                 </div>
@@ -273,9 +278,9 @@ export default function HomePage() {
                 <div className="media-card__body">
                   <div>
                     <span className="eyebrow eyebrow--dark">Privacy-focused operations</span>
-                    <h3>Responsible handling for sensitive documentation.</h3>
+                    <h3>Secure handling for sensitive documentation.</h3>
                     <p>
-                      Support trust with controlled workflows, clear process boundaries, and consistent communication.
+                      Maintain trust through controlled workflows, clear process boundaries, and consistent communication.
                     </p>
                   </div>
                 </div>
@@ -290,15 +295,15 @@ export default function HomePage() {
           <div className="security-panel">
             <div className="security-panel__content">
               <span className="eyebrow eyebrow--dark">Security by design</span>
-              <h2>Privacy-conscious review from initial upload through final reporting.</h2>
+              <h2>Privacy-conscious review from intake through final reporting.</h2>
               <p>
-                The platform supports controlled intake, defined workflows, and orderly communication throughout the review lifecycle.
+                Our process supports controlled intake, defined workflows, and structured communication throughout the review lifecycle.
               </p>
 
               <ul className="security-list">
-                <li>Review steps are clear and easy to communicate to clients and internal teams.</li>
-                <li>Security messaging is integrated into the interface without adding unnecessary complexity.</li>
-                <li>Forms and pages are ready to connect to your governed submission process.</li>
+                <li>Review steps are standardized and easy to communicate across teams.</li>
+                <li>Security expectations are integrated into the workflow without adding unnecessary complexity.</li>
+                <li>Request workflows align with governed submission and escalation processes.</li>
               </ul>
             </div>
 
@@ -322,10 +327,9 @@ export default function HomePage() {
         <div className="container quote-panel">
           <article className="quote-card">
             <span className="eyebrow">Who we support</span>
-            <h3>Designed for DME suppliers, intake teams, and reimbursement leadership.</h3>
+            <h3>Built for DME suppliers, intake teams, and reimbursement leadership.</h3>
             <p>
-              The site presents your service clearly across problem definition, review methodology,
-              compliance posture, and next steps.
+              Our service model communicates review scope, compliance expectations, and operational next steps with clarity.
             </p>
             <div className="chip-list">
               <span className="chip">Pre-submission QA</span>
@@ -337,7 +341,7 @@ export default function HomePage() {
 
           <article className="cta-panel">
             <span className="eyebrow">Next step</span>
-            <h2>Ready to review your next documentation batch?</h2>
+            <h2>Ready to evaluate your next documentation batch?</h2>
             <p>
               Start with a structured request and receive clear findings that support faster, more accurate submissions.
             </p>
