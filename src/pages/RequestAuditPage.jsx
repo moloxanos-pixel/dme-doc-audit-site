@@ -15,8 +15,8 @@ export default function RequestAuditPage() {
     <>
       <PageHero
         eyebrow="Request review"
-        title="Start a DME documentation audit request with a more premium intake experience."
-        intro="This page is ready to become your live request flow. The interface is polished, responsive, and easy to wire into a secure upload or backend workflow."
+        title="Start your DME documentation review request."
+        intro="Submit your review requirements through a structured intake experience designed for secure workflow integration."
         panelClassName="page-hero__panel--image page-hero__panel--plain"
         panel={
           <>
@@ -25,10 +25,10 @@ export default function RequestAuditPage() {
               style={{ backgroundImage: `url(${protectionPhoto})` }}
             />
             <div className="page-hero__panel__content">
-              <span className="eyebrow eyebrow--dark">Front-end ready</span>
-              <h3 className="page-hero__mini-title">Connect your secure intake next.</h3>
+              <span className="eyebrow eyebrow--dark">Integration ready</span>
+              <h3 className="page-hero__mini-title">Connect your secure intake process.</h3>
               <p className="page-hero__mini-copy">
-                Plug in Formspree, Resend, HubSpot, a custom API, or your existing secure uploader.
+                Integrate with Formspree, Resend, HubSpot, a custom API, or your existing secure uploader.
               </p>
             </div>
           </>
@@ -40,8 +40,8 @@ export default function RequestAuditPage() {
           <article className="contact-card">
             <SectionTitle
               eyebrow="Request details"
-              title="A clean form layout you can launch from."
-              intro="The form below is intentionally honest: it is a finished front-end pattern ready for your backend integration."
+              title="A launch-ready form for review intake."
+              intro="This front-end form is prepared for production once connected to your approved backend workflow."
             />
 
             <form onSubmit={handleSubmit}>
@@ -99,7 +99,7 @@ export default function RequestAuditPage() {
                   <textarea
                     id="notes"
                     name="notes"
-                    placeholder="Share anything useful: document types, pain points, preferred intake method, or questions."
+                    placeholder="Share relevant context such as document types, recurring issues, preferred intake method, or questions."
                   />
                 </div>
               </div>
@@ -112,8 +112,8 @@ export default function RequestAuditPage() {
 
               <div className="form-note">
                 {submitted
-                  ? "This demo form is ready for your secure backend or intake endpoint. Replace the submit handler with your production workflow."
-                  : "Demo-ready UI: this submit action currently stays on the page. Connect it to your endpoint before launch."}
+                  ? "The form submission pattern is ready. Connect this handler to your secure intake endpoint for production use."
+                  : "This demo form currently remains on-page. Connect it to your approved endpoint before launch."}
               </div>
             </form>
           </article>
@@ -121,15 +121,15 @@ export default function RequestAuditPage() {
           <article className="info-card">
             <SectionTitle
               eyebrow="What to expect"
-              title="A calmer intake experience for both sides."
-              intro="The right side of the page gives visitors confidence before they submit anything."
+              title="A clear intake experience for both teams."
+              intro="This panel reinforces process expectations before any information is submitted."
             />
 
             <ul className="info-list">
-              <li>Use this design with a secure uploader, encrypted file exchange, or controlled CRM workflow.</li>
-              <li>Keep expectations clear with scoping fields, turnaround choices, and open notes for context.</li>
-              <li>Support trust with strong visual cues instead of overloading the page with technical language.</li>
-              <li>Extend the page later with FAQs, upload steps, or a scheduling widget if needed.</li>
+              <li>Use this design with a secure uploader, encrypted exchange, or controlled CRM workflow.</li>
+              <li>Set expectations with scope fields, turnaround options, and notes for context.</li>
+              <li>Communicate trust through clear process language and consistent visual structure.</li>
+              <li>Extend this page with FAQs, upload steps, or scheduling components as needed.</li>
             </ul>
           </article>
         </div>

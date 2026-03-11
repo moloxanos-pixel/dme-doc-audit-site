@@ -4,37 +4,37 @@ import SectionTitle from "../components/SectionTitle";
 
 const values = [
   {
-    title: "Calm premium UX",
+    title: "Professional user experience",
     description:
-      "Serious services often look too sparse or too cluttered. This redesign sits in the middle: modern, elegant, and still trustworthy.",
+      "The interface balances clarity and visual structure so stakeholders can review information quickly and confidently.",
   },
   {
-    title: "Human judgement where it matters",
+    title: "Human judgment where it matters",
     description:
-      "The story communicates a process that combines structured review logic with thoughtful evaluation of edge cases.",
+      "The review model combines structured criteria with experienced judgment for records that require nuance.",
   },
   {
-    title: "Communication teams can use",
+    title: "Operational communication",
     description:
-      "A strong operational service needs a strong interface. Clear status, visual hierarchy, and next-step language help people act fast.",
+      "Clear status language, hierarchy, and next-step guidance support timely action across teams.",
   },
 ];
 
 const timeline = [
   {
-    title: "Position the problem clearly",
+    title: "Define the documentation risk",
     description:
-      "The site now opens with stronger storytelling: documentation friction, submission risk, and the need for clean review workflows.",
+      "The experience starts by clarifying common submission risks and the operational impact of incomplete records.",
   },
   {
-    title: "Present the solution visually",
+    title: "Present the review method",
     description:
-      "Original SVG illustrations and softly blended imagery create trust without relying on generic placeholder sections alone.",
+      "Visuals and content explain how records are assessed for completeness, consistency, and readiness.",
   },
   {
-    title: "Lead visitors to action",
+    title: "Guide the next action",
     description:
-      "Every page creates a smoother route to Request Review, supported by better structure and more premium design cues.",
+      "Each page directs visitors toward a clear Request Review path with practical expectations.",
   },
 ];
 
@@ -43,8 +43,8 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About"
-        title="A clearer story for a serious documentation review service."
-        intro="The redesign keeps the original business promise, but reframes it inside a modern, multi-page product experience that feels more complete, more premium, and easier to trust."
+        title="A clear, professional presentation for documentation review services."
+        intro="DME Records Reviews is built to communicate methodology, compliance awareness, and service reliability with clarity."
         panel={<HeroIllustration />}
       />
 
@@ -52,9 +52,9 @@ export default function AboutPage() {
         <div className="container story-grid">
           <article className="story-panel">
             <SectionTitle
-              eyebrow="Why this redesign works"
-              title="From a simple landing page to a polished service narrative."
-              intro="The original project had the core message, but not the visual depth or information flow to support it. This version introduces stronger hierarchy, page separation, and premium visual storytelling."
+              eyebrow="Why this approach works"
+              title="From a basic landing page to a complete service narrative."
+              intro="The information architecture supports decision-making by presenting scope, process, trust signals, and action steps in a logical flow."
             />
 
             <div className="values-grid">
@@ -70,8 +70,8 @@ export default function AboutPage() {
           <article className="timeline-panel">
             <SectionTitle
               eyebrow="Approach"
-              title="A sequence visitors can follow."
-              intro="Each page moves from problem to process to trust to action, which makes the service easier to understand at a glance."
+              title="A sequence stakeholders can follow quickly."
+              intro="Each page supports understanding from service need to review process to implementation readiness."
             />
 
             <div className="timeline-list">

@@ -12,33 +12,33 @@ const services = [
   {
     title: "Batch documentation review",
     description:
-      "Review a set of records before submission to identify administrative gaps and documentation completeness issues.",
+      "Review record sets before submission to identify administrative deficiencies and documentation completeness issues.",
     bullets: [
-      "Signatures, dates, and order detail checks",
+      "Signature, date, and order detail verification",
       "Issue grouping by record",
-      "Clear reviewer comments",
+      "Clear reviewer notes for correction",
     ],
     icon: FileSparkIcon,
   },
   {
     title: "Medical necessity checkpoint",
     description:
-      "Surface records that may need closer attention for medical necessity support and chart note alignment.",
+      "Identify records that require additional support for medical necessity and chart-note alignment.",
     bullets: [
-      "Narrative support review",
-      "Documentation consistency",
-      "Priority flagging",
+      "Narrative support assessment",
+      "Consistency checks across documentation",
+      "Priority flags for high-risk records",
     ],
     icon: ShieldCheckIcon,
   },
   {
     title: "Recurring QA support",
     description:
-      "Create an ongoing review rhythm for teams handling repeat batches, escalations, or workflow cleanup.",
+      "Establish ongoing quality review support for teams managing recurring volume, escalations, or process correction.",
     bullets: [
-      "Flexible cadence by batch size",
-      "Status visibility for operations",
-      "Support for process refinement",
+      "Flexible cadence based on batch size",
+      "Status visibility for operations teams",
+      "Support for workflow improvement",
     ],
     icon: ClockArrowIcon,
   },
@@ -48,40 +48,40 @@ const included = [
   {
     icon: CompassPulseIcon,
     title: "Scoping and prioritization",
-    description: "Define turnaround, review depth, and what matters most before work starts.",
+    description: "Define turnaround, review depth, and priorities before review begins.",
   },
   {
     icon: FileSparkIcon,
     title: "Record-level findings",
-    description: "Keep output understandable for intake staff, managers, and anyone handling corrections.",
+    description: "Deliver clear findings that intake staff, managers, and correction teams can use.",
   },
   {
     icon: ShieldCheckIcon,
-    title: "Confidence-building presentation",
-    description: "Use a premium interface that makes the service feel deliberate and reliable.",
+    title: "Professional delivery",
+    description: "Present results in a structured format that supports confidence and accountability.",
   },
 ];
 
 const faqs = [
   {
-    question: "Can this site support a simple request flow or a full secure intake process?",
+    question: "Can this site support a basic request flow or a secure intake process?",
     answer:
-      "Yes. The Request Review page is designed as a front-end UI that can be connected to a lightweight contact flow, secure uploader, CRM, or custom backend.",
+      "Yes. The Request Review page can connect to a standard contact flow, secure uploader, CRM, or custom backend.",
   },
   {
     question: "Is the design responsive across desktop and mobile?",
     answer:
-      "Yes. The layout uses responsive grids, flexible cards, and a mobile navigation pattern so the experience stays polished on smaller screens.",
+      "Yes. The layout uses responsive grids, flexible cards, and mobile-friendly navigation for consistent usability.",
   },
   {
-    question: "Can I extend this to show case studies or pricing later?",
+    question: "Can we add case studies or pricing later?",
     answer:
-      "Absolutely. The structure is intentionally modular, so adding case studies, pricing sections, or more service detail pages is straightforward.",
+      "Yes. The page structure is modular, so additional sections and service detail pages can be added without redesigning the core layout.",
   },
   {
-    question: "Does the redesign preserve the existing value proposition?",
+    question: "Does this preserve the current value proposition?",
     answer:
-      "Yes. The core message remains the same—faster approvals, fewer denials, and stronger documentation readiness—but the storytelling is much more premium and complete.",
+      "Yes. The core message remains focused on faster approvals, fewer avoidable denials, and stronger documentation readiness.",
   },
 ];
 
@@ -90,8 +90,8 @@ export default function ServicesPage() {
     <>
       <PageHero
         eyebrow="Services"
-        title="Review services for cleaner submissions and fewer surprises."
-        intro="The service stack is framed to feel premium and operationally useful: clear deliverables, elegant presentation, and enough flexibility to support both single batches and repeat review work."
+        title="Review services designed for cleaner submissions and fewer delays."
+        intro="Our service model emphasizes clear deliverables, dependable turnaround, and practical reporting for both one-time and recurring review needs."
         panel={
           <div className="page-hero__panel__content">
             <div className="page-hero__art page-hero__art--compact">
@@ -104,9 +104,9 @@ export default function ServicesPage() {
       <section className="section section--tight">
         <div className="container">
           <SectionTitle
-            eyebrow="Core offers"
-            title="A clean service menu with room to grow."
-            intro="Instead of presenting everything in one flat block, the redesign gives each offer its own card, visual anchor, and operational context."
+            eyebrow="Core services"
+            title="A focused review menu with room to scale."
+            intro="Each service is defined with clear scope and outputs to support operational planning and execution."
           />
 
           <div className="service-grid">
@@ -134,9 +134,9 @@ export default function ServicesPage() {
       <section className="section section--highlight">
         <div className="container">
           <SectionTitle
-            eyebrow="What is included"
-            title="Deliverables that feel usable, not vague."
-            intro="Every section is designed to make the service easier to explain to clients and easier to act on internally."
+            eyebrow="Included with each engagement"
+            title="Deliverables teams can act on immediately."
+            intro="Outputs are structured to improve communication with clients and accelerate internal correction workflows."
           />
           <div className="feature-grid">
             {included.map((item) => {
@@ -159,8 +159,8 @@ export default function ServicesPage() {
         <div className="container">
           <SectionTitle
             eyebrow="FAQ"
-            title="Common questions about the redesign and service structure."
-            intro="These answer the questions most likely to come up when you turn the prototype into a live production site."
+            title="Common questions about service delivery and implementation."
+            intro="These responses address typical planning questions when preparing the site for live operations."
           />
           <div className="faq-grid">
             {faqs.map((faq) => (
