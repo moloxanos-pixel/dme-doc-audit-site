@@ -15,8 +15,8 @@ export default function RequestAuditPage() {
     <>
       <PageHero
         eyebrow="Request review"
-        title="Start your DME documentation review request."
-        intro="Submit your review requirements through a structured intake experience designed for secure workflow integration."
+        title="Submit your review request in a secure, publish-ready flow."
+        intro="Share your project details to begin intake. After submission, your team receives a secure upload link by email for safe document transfer."
         panelClassName="page-hero__panel--image page-hero__panel--plain"
         panel={
           <>
@@ -26,9 +26,9 @@ export default function RequestAuditPage() {
             />
             <div className="page-hero__panel__content">
               <span className="eyebrow eyebrow--dark">Integration ready</span>
-              <h3 className="page-hero__mini-title">Connect your secure intake process.</h3>
+              <h3 className="page-hero__mini-title">Launch with secure document handoff.</h3>
               <p className="page-hero__mini-copy">
-                Integrate with Formspree, Resend, HubSpot, a custom API, or your existing secure uploader.
+                Connect this flow to Formspree, Resend, HubSpot, or a custom API that emails a secure upload link after request submission.
               </p>
             </div>
           </>
@@ -40,8 +40,8 @@ export default function RequestAuditPage() {
           <article className="contact-card">
             <SectionTitle
               eyebrow="Request details"
-              title="A launch-ready form for review intake."
-              intro="This front-end form is prepared for production once connected to your approved backend workflow."
+              title="A professional intake form ready for production."
+              intro="This front-end workflow is designed for live publishing once connected to your approved backend, notifications, and secure upload service."
             />
 
             <form onSubmit={handleSubmit}>
@@ -106,14 +106,14 @@ export default function RequestAuditPage() {
 
               <div className="hero__actions hero__actions--compact">
                 <button type="submit" className="button button--accent">
-                  Submit request
+                  Submit review request
                 </button>
               </div>
 
               <div className="form-note">
                 {submitted
-                  ? "The form submission pattern is ready. Connect this handler to your secure intake endpoint for production use."
-                  : "This demo form currently remains on-page. Connect it to your approved endpoint before launch."}
+                  ? "Thanks—your request has been captured in this demo flow. In production, this action should trigger an email with a secure upload link for protected document transfer."
+                  : "After submission, users should receive a secure upload link by email. Avoid requesting sensitive records through standard email attachments."}
               </div>
             </form>
           </article>
@@ -121,15 +121,15 @@ export default function RequestAuditPage() {
           <article className="info-card">
             <SectionTitle
               eyebrow="What to expect"
-              title="A clear intake experience for both teams."
-              intro="This panel reinforces process expectations before any information is submitted."
+              title="Clear next steps from request to document transfer."
+              intro="Set expectations before submission so clients understand exactly how documents are shared securely."
             />
 
             <ul className="info-list">
-              <li>Use this design with a secure uploader, encrypted exchange, or controlled CRM workflow.</li>
-              <li>Set expectations with scope fields, turnaround options, and notes for context.</li>
-              <li>Communicate trust through clear process language and consistent visual structure.</li>
-              <li>Extend this page with FAQs, upload steps, or scheduling components as needed.</li>
+              <li>Users submit request details first—no sensitive files are uploaded directly in this form.</li>
+              <li>After submission, send a secure upload link by email for protected document transfer.</li>
+              <li>Use encrypted storage, access controls, and audit logging in the connected upload system.</li>
+              <li>Keep plain email attachments as a fallback exception, not the default for sensitive records.</li>
             </ul>
           </article>
         </div>

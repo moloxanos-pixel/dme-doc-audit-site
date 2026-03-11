@@ -62,7 +62,7 @@ export default function SiteLayout({ children }) {
               <NavItem key={item.to} {...item} />
             ))}
             <Link to="/request-review" className="button button--accent site-nav__cta">
-              Start a review
+              Start secure request
             </Link>
           </nav>
         </div>

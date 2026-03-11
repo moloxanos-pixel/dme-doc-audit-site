@@ -43,7 +43,7 @@ const steps = [
   {
     title: "Submit records securely",
     description:
-      "Share the requested batch through your secure workflow and confirm scope, priorities, and turnaround expectations.",
+      "Submit your request details, then use the secure upload link sent by email to share the requested batch safely.",
   },
   {
     title: "Complete a readiness audit",
@@ -74,7 +74,7 @@ export default function HomePage() {
 
             <div className="hero__actions">
               <Link to="/request-review" className="button button--accent">
-                Request review
+                Start secure review request
               </Link>
               <Link to="/services" className="button button--ghost">
                 Explore services
@@ -337,16 +337,16 @@ export default function HomePage() {
 
           <article className="cta-panel">
             <span className="eyebrow">Next step</span>
-            <h2>Ready to review your next documentation batch?</h2>
+            <h2>Ready to request your next documentation review?</h2>
             <p>
-              Start with a structured request and receive clear findings that support faster, more accurate submissions.
+              Submit your request details first. We then email a secure upload link so your team can transfer documents safely.
             </p>
             <div className="hero__actions hero__actions--compact">
               <Link to="/request-review" className="button button--accent">
-                Request review
+                Start secure review request
               </Link>
               <Link to="/about" className="button button--ghost">
-                See our approach
+                Review our process
               </Link>
             </div>
           </article>

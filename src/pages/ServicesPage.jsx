@@ -66,7 +66,7 @@ const faqs = [
   {
     question: "Can this site support a basic request flow or a secure intake process?",
     answer:
-      "Yes. The Request Review page can connect to a standard contact flow, secure uploader, CRM, or custom backend.",
+      "Yes. The Request Review page can capture request details first, then trigger an email with a secure upload link via CRM or custom backend.",
   },
   {
     question: "Is the design responsive across desktop and mobile?",
