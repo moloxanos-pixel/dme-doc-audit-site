@@ -38,10 +38,10 @@ export default function SiteLayout({ children }) {
       <header className="site-header">
         <div className="container site-header__inner">
           <Link to="/" className="brand-mark" aria-label="Go to home page">
-            <span className="brand-mark__logo">M</span>
+            <span className="brand-mark__logo">D</span>
             <span className="brand-mark__copy">
-              <strong>Moloxanos</strong>
-              <span>DME documentation audit</span>
+              <strong>DME Records Reviews</strong>
+              <span>DME documentation audit services</span>
             </span>
           </Link>
 
@@ -74,13 +74,13 @@ export default function SiteLayout({ children }) {
         <div className="container">
           <div className="site-footer__panel">
             <div className="site-footer__brand">
-              <strong>Moloxanos</strong>
+              <strong>DME Records Reviews</strong>
               <p>
-                A modern review layer for DME documentation teams that want cleaner
-                submissions, clearer handoffs, and a more premium client experience.
+                Independent DME documentation reviews focused on compliance quality,
+                accurate findings, and dependable handoffs for submission teams.
               </p>
               <div className="site-footer__meta">
-                <span>Designed for elegant trust-building</span>
+                <span>Built for compliance-focused operations</span>
                 <span>Multi-page React + Vite project</span>
               </div>
             </div>

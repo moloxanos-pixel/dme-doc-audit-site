@@ -5,19 +5,19 @@ const sections = [
     id: "acceptance",
     title: "Acceptance of terms",
     paragraphs: [
-      "These sample terms are included to complete the redesigned multi-page site structure. They should be replaced with legal language tailored to your actual business, services, and jurisdiction.",
-      "By using the site, visitors would typically be agreeing to the terms that govern access to the website and any related request workflows.",
+      "These terms are intended to govern access to the website and related request workflows for DME Records Reviews.",
+      "Before publication, confirm that this language is tailored to your business model, services, and applicable jurisdiction.",
     ],
   },
   {
     id: "site-use",
     title: "Use of the site",
     paragraphs: [
-      "This section normally explains who the site is for, what types of use are allowed, and what activities are prohibited.",
+      "This section defines permitted use, prohibited activity, and user responsibilities when accessing the site.",
     ],
     bullets: [
       "Use the site only for lawful business purposes",
-      "Do not attempt to disrupt, copy, or misuse the service",
+      "Do not disrupt, copy, or misuse the service",
       "Provide accurate information when requesting review services",
     ],
   },
@@ -25,29 +25,29 @@ const sections = [
     id: "no-advice",
     title: "No clinical, legal, or payer guarantee",
     paragraphs: [
-      "Because the service involves documentation review, your approved terms should carefully explain what the service does and does not promise.",
-      "This section is often where you clarify that review support does not guarantee payer decisions and should not be treated as legal advice.",
+      "Because this service includes documentation review, your terms should clearly explain service scope and limitations.",
+      "Terms should also clarify that review support does not guarantee payer decisions and does not constitute legal advice.",
     ],
   },
   {
     id: "intellectual-property",
     title: "Intellectual property",
     paragraphs: [
-      "The live terms should identify your ownership of site content, branding, and original design work, while respecting the ownership of any materials submitted by clients through the request process.",
+      "The published terms should define ownership of website content, branding, and original materials while respecting ownership of submitted client records and documentation.",
     ],
   },
   {
     id: "liability",
     title: "Limitation of liability",
     paragraphs: [
-      "Your final terms should contain any liability language, warranty disclaimers, or service limitations that your counsel recommends for production.",
+      "Include liability limitations, warranty disclaimers, and service constraints recommended by legal counsel for production use.",
     ],
   },
   {
     id: "contact",
     title: "Contact and updates",
     paragraphs: [
-      "Replace this section with your real business contact information and explain how updates to the terms will be communicated or posted.",
+      "Provide current business contact information and explain how updates to these terms will be published.",
     ],
   },
 ];
@@ -56,8 +56,8 @@ export default function TermsOfUse() {
   return (
     <LegalPage
       title="Terms of Use"
-      intro="A premium legal page structure with stronger readability and navigation. Replace this sample language with reviewed terms before launch."
-      updatedLabel="Suggested last-updated label: replace with the real terms revision date before launch."
+      intro="This page provides a structured legal framework for website access and service inquiry terms."
+      updatedLabel="Last updated: replace with the current terms revision date before publication."
       sections={sections}
     />
   );

@@ -1,6 +1,6 @@
-# DME Doc Audit Site Redesign
+# DME Doc Audit Site
 
-A modern multi-page React + Vite redesign for the Moloxanos DME documentation audit website.
+A modern multi-page React + Vite website for DME Records Reviews, focused on professional documentation audit communication.
 
 ## Included pages
 
@@ -13,16 +13,16 @@ A modern multi-page React + Vite redesign for the Moloxanos DME documentation au
 
 ## Design notes
 
-- Premium clinical-tech visual style
-- Original SVG hero and workflow illustrations inspired by your references
-- Blended background cards using the unwatermarked reference photos you shared
-- Glassmorphism surfaces, gradient lighting, elegant spacing, and responsive layouts
+- Professional clinical-operations visual style
+- Original SVG hero and workflow illustrations inspired by provided references
+- Blended background cards using approved reference photos
+- Responsive layouts with clear hierarchy for service communication
 
 ## Important notes
 
 - The large Shutterstock group illustration was treated as reference only and is **not embedded** in this project.
-- The Request Review form is a polished front-end UI prototype. Connect it to your secure endpoint, CRM, or upload workflow before production.
-- Privacy Policy and Terms content should be reviewed and replaced with attorney-approved copy before launch.
+- The Request Review form is a front-end UI pattern and should be connected to your secure endpoint, CRM, or upload workflow before production use.
+- Privacy Policy and Terms of Use content should be reviewed and finalized by legal counsel before launch.
 
 ## Run locally
 
@@ -40,7 +40,7 @@ npm run preview
 
 ## Suggested next steps
 
-1. Connect the Request Review form to your preferred backend or secure intake flow.
-2. Replace placeholder legal copy with approved policy text.
-3. Add your live logo, domain-specific copy, and final contact details.
-4. Swap the reference photos with final licensed brand imagery if needed.
+1. Connect the Request Review form to your approved backend or secure intake workflow.
+2. Finalize legal page language with counsel.
+3. Add production contact details and any required compliance disclosures.
+4. Replace reference photos with final licensed brand imagery if needed.
