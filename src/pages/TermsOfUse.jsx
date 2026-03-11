@@ -1,64 +1,74 @@
 import LegalPage from "./LegalPage";
+import Seo from "../components/Seo";
 
 const sections = [
   {
     id: "acceptance",
     title: "Acceptance of terms",
     paragraphs: [
-      "These terms are intended to govern access to the website and related request workflows for DME Records Reviews.",
-      "Before publication, confirm that this language is tailored to your business model, services, and applicable jurisdiction.",
+      "By accessing this website, you agree to these Terms of Use and applicable laws.",
+      "If you do not agree with these terms, please do not use this website.",
     ],
   },
   {
     id: "site-use",
     title: "Use of the site",
     paragraphs: [
-      "This section defines permitted use, prohibited activity, and user responsibilities when accessing the site.",
+      "This website is provided for lawful business inquiries related to DME documentation review services.",
     ],
     bullets: [
-      "Use the site only for lawful business purposes",
-      "Do not disrupt, copy, or misuse the service",
-      "Provide accurate information when requesting review services",
+      "Use the site only for legitimate business purposes",
+      "Do not interfere with site functionality, security, or availability",
+      "Provide accurate and non-misleading information in all submissions",
     ],
   },
   {
-    id: "no-advice",
-    title: "No clinical, legal, or payer guarantee",
+    id: "service-scope",
+    title: "Service scope and limitations",
     paragraphs: [
-      "Because this service includes documentation review, your terms should clearly explain service scope and limitations.",
-      "Terms should also clarify that review support does not guarantee payer decisions and does not constitute legal advice.",
+      "DME Records Reviews provides documentation review support and operational findings.",
+      "Services do not constitute legal advice, clinical decision-making, or a guarantee of payer determination.",
     ],
   },
   {
     id: "intellectual-property",
     title: "Intellectual property",
     paragraphs: [
-      "The published terms should define ownership of website content, branding, and original materials while respecting ownership of submitted client records and documentation.",
+      "Website content, branding, and original materials are the property of DME Records Reviews unless otherwise stated.",
+      "Client-submitted records and documentation remain the property of their respective owners.",
     ],
   },
   {
     id: "liability",
     title: "Limitation of liability",
     paragraphs: [
-      "Include liability limitations, warranty disclaimers, and service constraints recommended by legal counsel for production use.",
+      'This website and related content are provided on an "as is" and "as available" basis without warranties of any kind.',
+      "To the fullest extent permitted by law, DME Records Reviews is not liable for indirect, incidental, or consequential damages arising from website use.",
     ],
   },
   {
     id: "contact",
     title: "Contact and updates",
     paragraphs: [
-      "Provide current business contact information and explain how updates to these terms will be published.",
+      "We may revise these terms periodically to reflect operational or legal changes.",
+      "Continued use of the website after updates constitutes acceptance of the revised terms.",
     ],
   },
 ];
 
 export default function TermsOfUse() {
   return (
-    <LegalPage
-      title="Terms of Use"
-      intro="This page provides a structured legal framework for website access and service inquiry terms."
-      updatedLabel="Last updated: replace with the current terms revision date before publication."
-      sections={sections}
-    />
+    <>
+      <Seo
+        title="Terms of Use"
+        description="Review the DME Records Reviews Terms of Use for website access, permitted use, service limitations, and legal notices."
+      />
+      <LegalPage
+        title="Terms of Use"
+        intro="These Terms of Use govern access to the DME Records Reviews website and related inquiry workflows."
+        updatedLabel="Last updated: March 2026"
+        sections={sections}
+      />
+    </>
   );
 }

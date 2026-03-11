@@ -1,50 +1,56 @@
 import PageHero from "../components/PageHero";
 import HeroIllustration from "../components/HeroIllustration";
 import SectionTitle from "../components/SectionTitle";
+import Seo from "../components/Seo";
 
 const values = [
   {
-    title: "Professional user experience",
+    title: "Compliance-focused methodology",
     description:
-      "The interface balances clarity and visual structure so stakeholders can review information quickly and confidently.",
+      "Our review framework is built around documentation completeness, medical necessity support, and consistency standards.",
   },
   {
-    title: "Human judgment where it matters",
+    title: "Experienced reviewer oversight",
     description:
-      "The review model combines structured criteria with experienced judgment for records that require nuance.",
+      "Structured criteria are applied with professional judgment to identify nuanced documentation risks.",
   },
   {
-    title: "Operational communication",
+    title: "Clear operational communication",
     description:
-      "Clear status language, hierarchy, and next-step guidance support timely action across teams.",
+      "Findings are presented in practical language that supports timely handoff and corrective action across teams.",
   },
 ];
 
 const timeline = [
   {
-    title: "Define the documentation risk",
+    title: "Define scope and priorities",
     description:
-      "The experience starts by clarifying common submission risks and the operational impact of incomplete records.",
+      "We align on record volume, review depth, and turnaround expectations before work begins.",
   },
   {
-    title: "Present the review method",
+    title: "Conduct structured record review",
     description:
-      "Visuals and content explain how records are assessed for completeness, consistency, and readiness.",
+      "Records are evaluated for required documentation elements, consistency, and medical necessity support.",
   },
   {
-    title: "Guide the next action",
+    title: "Deliver findings and next actions",
     description:
-      "Each page directs visitors toward a clear Request Review path with practical expectations.",
+      "Teams receive prioritized findings and recommendations to support correction and submission readiness.",
   },
 ];
 
 export default function AboutPage() {
   return (
     <>
+      <Seo
+        title="About"
+        description="Learn how DME Records Reviews applies structured, compliance-focused documentation review with secure handling and professional reporting."
+      />
+
       <PageHero
         eyebrow="About"
-        title="A clear, professional presentation for documentation review services."
-        intro="DME Records Reviews is built to communicate methodology, compliance awareness, and service reliability with clarity."
+        title="A disciplined approach to DME documentation review."
+        intro="DME Records Reviews supports suppliers and operations teams with compliance-focused review methodology, secure handling practices, and dependable reporting."
         panel={<HeroIllustration />}
       />
 
@@ -52,9 +58,9 @@ export default function AboutPage() {
         <div className="container story-grid">
           <article className="story-panel">
             <SectionTitle
-              eyebrow="Why this approach works"
-              title="From a basic landing page to a complete service narrative."
-              intro="The information architecture supports decision-making by presenting scope, process, trust signals, and action steps in a logical flow."
+              eyebrow="Why teams choose this model"
+              title="Built for clarity, consistency, and operational accountability."
+              intro="Our service structure helps organizations reduce preventable rework and improve confidence before submission."
             />
 
             <div className="values-grid">
@@ -69,9 +75,9 @@ export default function AboutPage() {
 
           <article className="timeline-panel">
             <SectionTitle
-              eyebrow="Approach"
-              title="A sequence stakeholders can follow quickly."
-              intro="Each page supports understanding from service need to review process to implementation readiness."
+              eyebrow="Our process"
+              title="A straightforward workflow from intake to reporting."
+              intro="Each step is designed to support timely decisions and consistent follow-through."
             />
 
             <div className="timeline-list">

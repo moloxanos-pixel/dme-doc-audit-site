@@ -41,7 +41,7 @@ export default function SiteLayout({ children }) {
             <span className="brand-mark__logo">D</span>
             <span className="brand-mark__copy">
               <strong>DME Records Reviews</strong>
-              <span>DME documentation audit services</span>
+              <span>Compliance-focused DME documentation review</span>
             </span>
           </Link>
 
@@ -62,7 +62,7 @@ export default function SiteLayout({ children }) {
               <NavItem key={item.to} {...item} />
             ))}
             <Link to="/request-review" className="button button--accent site-nav__cta">
-              Start a review
+              Request review
             </Link>
           </nav>
         </div>
@@ -76,12 +76,12 @@ export default function SiteLayout({ children }) {
             <div className="site-footer__brand">
               <strong>DME Records Reviews</strong>
               <p>
-                Independent DME documentation reviews focused on compliance quality,
-                accurate findings, and dependable handoffs for submission teams.
+                Independent record review services focused on documentation completeness,
+                medical necessity support, and submission readiness.
               </p>
               <div className="site-footer__meta">
-                <span>Built for compliance-focused operations</span>
-                <span>Multi-page React + Vite project</span>
+                <span>Secure document handling practices</span>
+                <span>Professional reporting and dependable turnaround</span>
               </div>
             </div>
 

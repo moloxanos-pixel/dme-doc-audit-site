@@ -1,6 +1,7 @@
 import PageHero from "../components/PageHero";
 import WorkflowIllustration from "../components/WorkflowIllustration";
 import SectionTitle from "../components/SectionTitle";
+import Seo from "../components/Seo";
 import {
   ClockArrowIcon,
   CompassPulseIcon,
@@ -12,33 +13,33 @@ const services = [
   {
     title: "Batch documentation review",
     description:
-      "Review record sets before submission to identify administrative deficiencies and documentation completeness issues.",
+      "Review record sets before submission to identify documentation deficiencies, missing elements, and workflow risks.",
     bullets: [
       "Signature, date, and order detail verification",
-      "Issue grouping by record",
-      "Clear reviewer notes for correction",
+      "Issue categorization by record and risk level",
+      "Concise reviewer notes to support correction",
     ],
     icon: FileSparkIcon,
   },
   {
-    title: "Medical necessity checkpoint",
+    title: "Medical necessity review",
     description:
-      "Identify records that require additional support for medical necessity and chart-note alignment.",
+      "Evaluate narrative support and record consistency to identify files that require stronger medical necessity documentation.",
     bullets: [
-      "Narrative support assessment",
-      "Consistency checks across documentation",
+      "Clinical narrative support assessment",
+      "Consistency checks across order and chart documentation",
       "Priority flags for high-risk records",
     ],
     icon: ShieldCheckIcon,
   },
   {
-    title: "Recurring QA support",
+    title: "Ongoing compliance QA support",
     description:
-      "Establish ongoing quality review support for teams managing recurring volume, escalations, or process correction.",
+      "Provide recurring compliance-focused record review for teams managing ongoing volume and quality improvement initiatives.",
     bullets: [
-      "Flexible cadence based on batch size",
-      "Status visibility for operations teams",
-      "Support for workflow improvement",
+      "Flexible cadence aligned to batch volume",
+      "Status visibility for operations leadership",
+      "Trend insights to support process improvement",
     ],
     icon: ClockArrowIcon,
   },
@@ -48,50 +49,55 @@ const included = [
   {
     icon: CompassPulseIcon,
     title: "Scoping and prioritization",
-    description: "Define turnaround, review depth, and priorities before review begins.",
+    description: "Define review depth, turnaround targets, and priority categories before work begins.",
   },
   {
     icon: FileSparkIcon,
     title: "Record-level findings",
-    description: "Deliver clear findings that intake staff, managers, and correction teams can use.",
+    description: "Deliver structured findings that intake, billing, and correction teams can apply quickly.",
   },
   {
     icon: ShieldCheckIcon,
-    title: "Professional delivery",
-    description: "Present results in a structured format that supports confidence and accountability.",
+    title: "Professional reporting",
+    description: "Provide clear outputs designed for accountable handoff and operational follow-through.",
   },
 ];
 
 const faqs = [
   {
-    question: "Can this site support a basic request flow or a secure intake process?",
+    question: "Can the request workflow support secure intake requirements?",
     answer:
-      "Yes. The Request Review page can connect to a standard contact flow, secure uploader, CRM, or custom backend.",
+      "Yes. The Request Review workflow can be connected to approved secure upload, CRM, or internal intake systems.",
   },
   {
-    question: "Is the design responsive across desktop and mobile?",
+    question: "Is service delivery suitable for both one-time and recurring review?",
     answer:
-      "Yes. The layout uses responsive grids, flexible cards, and mobile-friendly navigation for consistent usability.",
+      "Yes. Engagements can be scoped for a single batch or a recurring review cadence based on your operational needs.",
   },
   {
-    question: "Can we add case studies or pricing later?",
+    question: "What does the final deliverable include?",
     answer:
-      "Yes. The page structure is modular, so additional sections and service detail pages can be added without redesigning the core layout.",
+      "Deliverables include record-level findings, issue categorization, and practical recommendations for correction and resubmission readiness.",
   },
   {
-    question: "Does this preserve the current value proposition?",
+    question: "Can service scope be adjusted over time?",
     answer:
-      "Yes. The core message remains focused on faster approvals, fewer avoidable denials, and stronger documentation readiness.",
+      "Yes. Scope can be refined as documentation trends, staffing models, and compliance priorities evolve.",
   },
 ];
 
 export default function ServicesPage() {
   return (
     <>
+      <Seo
+        title="Services"
+        description="DME Records Reviews provides batch documentation review, medical necessity review, and recurring compliance QA support with clear reporting."
+      />
+
       <PageHero
         eyebrow="Services"
-        title="Review services designed for cleaner submissions and fewer delays."
-        intro="Our service model emphasizes clear deliverables, dependable turnaround, and practical reporting for both one-time and recurring review needs."
+        title="Review services designed to improve documentation quality and submission outcomes."
+        intro="Our service model emphasizes clear scope, dependable turnaround, and actionable reporting for one-time and recurring review needs."
         panel={
           <div className="page-hero__panel__content">
             <div className="page-hero__art page-hero__art--compact">
@@ -105,8 +111,8 @@ export default function ServicesPage() {
         <div className="container">
           <SectionTitle
             eyebrow="Core services"
-            title="A focused review menu with room to scale."
-            intro="Each service is defined with clear scope and outputs to support operational planning and execution."
+            title="Focused review support with scalable coverage."
+            intro="Each service is defined with clear deliverables to support planning, execution, and compliance accountability."
           />
 
           <div className="service-grid">
@@ -135,8 +141,8 @@ export default function ServicesPage() {
         <div className="container">
           <SectionTitle
             eyebrow="Included with each engagement"
-            title="Deliverables teams can act on immediately."
-            intro="Outputs are structured to improve communication with clients and accelerate internal correction workflows."
+            title="Deliverables teams can apply immediately."
+            intro="Outputs are structured to support efficient communication, corrective action, and operational follow-through."
           />
           <div className="feature-grid">
             {included.map((item) => {
@@ -159,8 +165,8 @@ export default function ServicesPage() {
         <div className="container">
           <SectionTitle
             eyebrow="FAQ"
-            title="Common questions about service delivery and implementation."
-            intro="These responses address typical planning questions when preparing the site for live operations."
+            title="Common questions about service scope and delivery."
+            intro="These answers provide practical guidance for planning implementation and onboarding."
           />
           <div className="faq-grid">
             {faqs.map((faq) => (
