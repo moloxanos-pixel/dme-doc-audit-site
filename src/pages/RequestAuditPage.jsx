@@ -1,10 +1,16 @@
 import { useState } from "react";
 import PageHero from "../components/PageHero";
 import SectionTitle from "../components/SectionTitle";
+import usePageMeta from "../components/usePageMeta";
 import protectionPhoto from "../assets/data-protection.jpg";
 
 export default function RequestAuditPage() {
   const [submitted, setSubmitted] = useState(false);
+
+  usePageMeta(
+    "Request a DME Documentation Review | DME Records Reviews",
+    "Submit your DME review request with scope, timeline, and record volume details through a structured intake experience.",
+  );
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -40,8 +46,8 @@ export default function RequestAuditPage() {
           <article className="contact-card">
             <SectionTitle
               eyebrow="Request details"
-              title="A launch-ready form for review intake."
-              intro="This front-end form is prepared for production once connected to your approved backend workflow."
+              title="A production-ready form for review intake."
+              intro="Connect this form to your secure intake endpoint to route requests into your production workflow."
             />
 
             <form onSubmit={handleSubmit}>
@@ -112,8 +118,8 @@ export default function RequestAuditPage() {
 
               <div className="form-note">
                 {submitted
-                  ? "The form submission pattern is ready. Connect this handler to your secure intake endpoint for production use."
-                  : "This demo form currently remains on-page. Connect it to your approved endpoint before launch."}
+                  ? "Thanks—your request has been captured in this demo. Connect this handler to your secure endpoint to process live submissions."
+                  : "This demo form currently stays on-page. Connect it to your approved endpoint before launch."}
               </div>
             </form>
           </article>

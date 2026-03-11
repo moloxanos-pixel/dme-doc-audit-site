@@ -6,7 +6,7 @@ const sections = [
     title: "Acceptance of terms",
     paragraphs: [
       "These terms are intended to govern access to the website and related request workflows for DME Records Reviews.",
-      "Before publication, confirm that this language is tailored to your business model, services, and applicable jurisdiction.",
+      "These terms apply to all visitors and organizations using the website to learn about services or submit review requests.",
     ],
   },
   {
@@ -25,29 +25,29 @@ const sections = [
     id: "no-advice",
     title: "No clinical, legal, or payer guarantee",
     paragraphs: [
-      "Because this service includes documentation review, your terms should clearly explain service scope and limitations.",
-      "Terms should also clarify that review support does not guarantee payer decisions and does not constitute legal advice.",
+      "DME Records Reviews provides documentation review support and operational guidance based on submitted materials and stated scope.",
+      "Services do not guarantee payer decisions, reimbursement outcomes, or legal determinations.",
     ],
   },
   {
     id: "intellectual-property",
     title: "Intellectual property",
     paragraphs: [
-      "The published terms should define ownership of website content, branding, and original materials while respecting ownership of submitted client records and documentation.",
+      "Website content and branding remain the property of DME Records Reviews, while client-submitted records remain the property of the submitting organization.",
     ],
   },
   {
     id: "liability",
     title: "Limitation of liability",
     paragraphs: [
-      "Include liability limitations, warranty disclaimers, and service constraints recommended by legal counsel for production use.",
+      "To the fullest extent allowed by law, services are provided on an 'as-is' basis and liability is limited to direct damages related to confirmed service failures.",
     ],
   },
   {
     id: "contact",
     title: "Contact and updates",
     paragraphs: [
-      "Provide current business contact information and explain how updates to these terms will be published.",
+      "Questions about these terms can be submitted through the Request Review page. Updates are posted on this page with a revised effective date.",
     ],
   },
 ];
@@ -56,9 +56,11 @@ export default function TermsOfUse() {
   return (
     <LegalPage
       title="Terms of Use"
-      intro="This page provides a structured legal framework for website access and service inquiry terms."
-      updatedLabel="Last updated: replace with the current terms revision date before publication."
+      intro="These terms govern website use and service inquiries for DME Records Reviews."
+      updatedLabel="Last updated: October 2026"
       sections={sections}
+      metaTitle="Terms of Use | DME Records Reviews"
+      metaDescription="Review the terms governing website access, service inquiries, and limitations for DME Records Reviews."
     />
   );
 }

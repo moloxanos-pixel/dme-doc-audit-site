@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import HeroIllustration from "../components/HeroIllustration";
 import WorkflowIllustration from "../components/WorkflowIllustration";
 import SectionTitle from "../components/SectionTitle";
+import usePageMeta from "../components/usePageMeta";
 import {
   FileSparkIcon,
   HandoffIcon,
@@ -58,6 +59,11 @@ const steps = [
 ];
 
 export default function HomePage() {
+  usePageMeta(
+    "DME Documentation Audit Services | DME Records Reviews",
+    "AI-assisted, human-reviewed DME documentation audits that improve submission readiness, reduce avoidable denials, and support compliance workflows.",
+  );
+
   return (
     <>
       <section className="hero">
