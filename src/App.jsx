@@ -1,12 +1,12 @@
-import { Navigate, Route, Routes } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
-import SiteLayout from "./components/SiteLayout";
-import HomePage from "./pages/HomePage";
-import ServicesPage from "./pages/ServicesPage";
-import AboutPage from "./pages/AboutPage";
-import RequestAuditPage from "./pages/RequestAuditPage";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TermsOfUse from "./pages/TermsOfUse";
+import { Navigate, Route, Routes } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
+import SiteLayout from './components/SiteLayout';
+import HomePage from './pages/HomePage';
+import ServicesPage from './pages/ServicesPage';
+import AboutPage from './pages/AboutPage';
+import RequestAuditPage from './pages/RequestAuditPage';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfUse from './pages/TermsOfUse';
 
 export default function App() {
   return (
